@@ -39,6 +39,8 @@
 }
 .header .firsth .all .azn button {
   color: white;
+  background-color: #0c1d32;
+  font-size: 12px;
 }
 .header .firsth .all hr {
   height: 10px;
@@ -50,4 +52,6 @@
 }
 .header .firsth .all .english button {
   color: white;
+  background-color: #0c1d32;
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
