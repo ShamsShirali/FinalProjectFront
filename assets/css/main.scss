@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1450px;
+    margin: auto;
+}
+
+.header {
+
+    .firsth {
+        background-color: #0c1d32;
+        width: 1520px;
+        height: 52px;
+
+        .all {
+            max-width: 1500px !important;
+            margin-top: 10px;
+
+            .icons {
+                display: flex;
+                width: 486px;
+
+                li {
+                    display: inline;
+                    padding-left: 25px;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .free {
+                color: white;
+                font-size: 12px;
+                width: 486px;
+            }
+
+            .azn {
+                width: 69px;
+
+                button {
+                    color: white;
+                }
+            }
+
+            hr {
+                height: 10px;
+                width: 3px;
+                color: white;
+            }
+
+            .english {
+                width: 81px;
+
+                button {
+                    color: white;
+                }
+            }
+        }
+    }
+}

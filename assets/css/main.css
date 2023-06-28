@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1450px;
+  margin: auto;
+}
+
+.header .firsth {
+  background-color: #0c1d32;
+  width: 1520px;
+  height: 52px;
+}
+.header .firsth .all {
+  max-width: 1500px !important;
+  margin-top: 10px;
+}
+.header .firsth .all .icons {
+  display: flex;
+  width: 486px;
+}
+.header .firsth .all .icons li {
+  display: inline;
+  padding-left: 25px;
+}
+.header .firsth .all .icons li a {
+  text-decoration: none;
+}
+.header .firsth .all .free {
+  color: white;
+  font-size: 12px;
+  width: 486px;
+}
+.header .firsth .all .azn {
+  width: 69px;
+}
+.header .firsth .all .azn button {
+  color: white;
+}
+.header .firsth .all hr {
+  height: 10px;
+  width: 3px;
+  color: white;
+}
+.header .firsth .all .english {
+  width: 81px;
+}
+.header .firsth .all .english button {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
