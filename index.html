@@ -38,81 +38,242 @@
 <body>
 
     <div class="header">
-        <div class="nav">
+        <nav>
             <div class="firsth">
                 <div class="all">
-                    <ul class="icons">
+                    <ul class="icons m-0">
                         <li>
                             <a href="#">
                                 <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="icon">
                             <a href="#">
                                 <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="icon">
                             <a href="#">
                                 <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="icon">
                             <a href="#">
                                 <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
                             </a>
                         </li>
                     </ul>
 
-                    <p class="free">FREE SHIPPING ON 3+ BOTTLES</p>
+                    <p class="free m-0">FREE SHIPPING ON 3+ BOTTLES</p>
 
-                    <div class="azn dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            AZN
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="#">AZN</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#"><img
-                                        src="assets/img/614JLqsvMoL._AC_UF894,1000_QL80_.jpg" alt="">EUR</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#"><img
-                                        src="assets/img/American-Flag-Logo-PNG-Picture.png" alt="">USD</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#"><img
-                                        src="assets/img/614JLqsvMoL._AC_UF894,1000_QL80_.jpg" alt="">GBP</a></li>
-                        </ul>
+                    <div class="selectvalue d-flex">
+                        <div class="azn dropdown">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                AZN
+                                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li class="firstazn"><a class="dropdown-item" href="#">AZN</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="flag">
+                                    <img src="assets/img/614JLqsvMoL._AC_UF894,1000_QL80_.jpg" alt="">
+                                    <a class="dropdown-item" href="#">EUR</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="flag">
+                                    <img src="assets/img/American-Flag-Logo-PNG-Picture.png" alt="">
+                                    <a class="dropdown-item" href="#">USD</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="flag">
+                                    <img src="assets/img/20190917170935!Flag_of_the_United_Kingdom.svg" alt="">
+                                    <a class="dropdown-item" href="#">GBP</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="english dropdown">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ENGLISH
+                                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">العربية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondh">
+                <div class="searchic">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <p>FIND US</p>
+                </div>
+
+                <ul class="firstsel">
+                    <li><a href="#">HOME</a></li>
+                    <li class="other"><a href="#">SHOP</a></li>
+                    <li class="other"><a href="#">PRODUCT</a></li>
+                </ul>
+
+                <img src="assets/img/logo-black.png" alt="">
+
+                <ul class="secondsel">
+                    <li><a href="#">BLOG</a></li>
+                    <li class="other"><a href="#">FEATURED</a></li>
+                    <li class="other"><a href="#">ABOUT US</a></li>
+                </ul>
+
+                <div class="main">
+                    <a class="user" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <div class="heart">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <sup>0</sup>
                     </div>
 
-                    <hr />
+                    <div class="basket">
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                        <sup>0</sup>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-                    <div class="english dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            ENGLISH
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item active" href="#">ENGLISH</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">العربية</a></li>
-                        </ul>
+    <section class="one">
+        <div class="container">
+            <div class="slider">
+                <div class="col-12">
+                    <div class="team">
+                        <img class="mainph" src="assets/img/slider-1.webp" alt="">
+
+                        <div class="titleph1">
+                            <p class="subtitle">AS A MEMBER OF THE EXPERIENCE</p>
+                            <p class="firpart">ENHANCE YOUR EXPERIENCE</p>
+                            <p class="secpart">WITH EASE</p>
+
+                            <div class="shbtn">
+                                <img class="handwine" src="assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
+                                    alt="">
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="team">
+                        <img class="mainph" src="assets/img/slider-2.webp" alt="">
+
+                        <div class="titleph2">
+                            <p class="subtitle">UNIQUE WINE FLAVORS</p>
+                            <p class="firpart">CHOOSE THE PERFECT</p>
+                            <p class="secpart">GLASS FOR YOU</p>
+
+                            <div class="shbtn">
+                                <img class="handwine" src="assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
+                                    alt="">
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="team">
+                        <img class="mainph" src="assets/img/slider-3.webp" alt="">
+
+                        <div class="titleph3">
+                            <p class="subtitle">OFFER WHITE WINE</p>
+                            <p class="firpart">PERFECT FAMILY</p>
+                            <p class="secpart">PARTY</p>
+
+                            <div class="shbtn">
+                                <img class="handwine" src="assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
+                                    alt="">
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="two">
+        <div class="container">
+            <div class="generalcart">
+                <div class="cart1">
+                    <p class="free">FREE SHIPPING OVER $120</p>
+                    <p class="store">To stores and home</p>
+                </div>
+
+                <div class="cart2">
+                    <p class="free">GET IT TODAY</p>
+                    <p class="store">Buy online & Pick up in store</p>
+                </div>
+
+                <div class="cart3">
+                    <p class="free">EXPRESS HOME DELIVERY</p>
+                    <p class="store">Within 2-3 working days</p>
+                </div>
+
+                <div class="cart4">
+                    <p class="free">BEST PRICES & OFFERS</p>
+                    <p class="store">Orders $50 or more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="three">
+        <div class="container">
+            <p class="rose">ROSE WINE</p>
+
+            <div class="generalcart">
+                <div class="card" style="width: 18rem;">
+                    <div class="photo">
+                    <img src="assets/img/Image-23_2d90352f-3a17-4eb2-a477-d8380bbdb1d7_360x.webp" class="card-img-top" alt="...">
+                </div>
+                    <div class="card-body">
+                        <div class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p class="reviews">No reviews</p>
+                    </div>
+
+                    <p class="title">Suspendisse Urna</p>
+                    <p class="price">$230.00</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
 
     <!-- bootstrap js link -->
 

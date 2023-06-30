@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Inter&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,53 +7,641 @@
 }
 
 .container {
-  max-width: 1450px;
+  max-width: 1480px;
   margin: auto;
 }
 
 .header .firsth {
   background-color: #0c1d32;
-  width: 1520px;
-  height: 52px;
 }
 .header .firsth .all {
-  max-width: 1500px !important;
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 .header .firsth .all .icons {
   display: flex;
-  width: 486px;
+  justify-content: space-between;
 }
 .header .firsth .all .icons li {
   display: inline;
-  padding-left: 25px;
+  cursor: pointer;
 }
 .header .firsth .all .icons li a {
   text-decoration: none;
 }
+.header .firsth .all .icons .icon {
+  padding-left: 25px;
+}
 .header .firsth .all .free {
   color: white;
-  font-size: 12px;
-  width: 486px;
+  font-size: 13px;
+  padding-left: 8px;
+  font-family: Libre Baskerville, serif;
 }
-.header .firsth .all .azn {
+.header .firsth .all .selectvalue {
+  margin-right: 20px;
+}
+.header .firsth .all .selectvalue .azn {
   width: 69px;
+  margin-right: 10px;
+  cursor: pointer;
 }
-.header .firsth .all .azn button {
+.header .firsth .all .selectvalue .azn button {
   color: white;
   background-color: #0c1d32;
+  font-size: 13px;
+  border: none;
+  font-family: Libre Baskerville, serif;
+}
+.header .firsth .all .selectvalue .azn button i {
+  margin-left: 5px;
+}
+.header .firsth .all .selectvalue .azn .show i {
+  margin-left: 5px;
+  transform: rotate(-180deg);
+  transition: all 0.2s;
+}
+.header .firsth .all .selectvalue .azn ul {
+  background-color: white;
+  box-shadow: 0px 2px 7px 2px #888888;
+  border: none;
+  border-radius: 0;
+  left: -100px !important;
+  height: 170px;
+}
+.header .firsth .all .selectvalue .azn ul li {
+  display: flex;
+}
+.header .firsth .all .selectvalue .azn ul li a {
+  color: #000;
+  font-weight: 500;
   font-size: 12px;
+  padding: 4px 5px;
 }
-.header .firsth .all hr {
-  height: 10px;
-  width: 3px;
-  color: white;
+.header .firsth .all .selectvalue .azn ul li img {
+  width: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 20px;
 }
-.header .firsth .all .english {
-  width: 81px;
+.header .firsth .all .selectvalue .azn ul li hr {
+  margin-left: 20px;
+  width: 120px;
+  background-color: rgba(149, 147, 147, 0.322);
 }
-.header .firsth .all .english button {
+.header .firsth .all .selectvalue .azn ul li:hover a {
+  color: #bd9855;
+}
+.header .firsth .all .selectvalue .azn ul .firstazn {
+  padding-left: 45px;
+  width: 0;
+}
+.header .firsth .all .selectvalue .line {
+  height: 20px;
+  width: 0.7px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.742);
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.header .firsth .all .selectvalue .english {
+  width: 100px;
+  cursor: pointer;
+}
+.header .firsth .all .selectvalue .english button {
   color: white;
   background-color: #0c1d32;
+  font-size: 13px;
+  border: none;
+  font-family: Libre Baskerville, serif;
+}
+.header .firsth .all .selectvalue .english button i {
+  margin-left: 5px;
+}
+.header .firsth .all .selectvalue .english .show i {
+  margin-left: 5px;
+  transform: rotate(-180deg);
+  transition: all 0.2s;
+}
+.header .firsth .all .selectvalue .english ul {
+  background-color: white;
+  box-shadow: 0px 2px 7px 2px #888888;
+  border: none;
+  border-radius: 0;
+  height: 95px;
+}
+.header .firsth .all .selectvalue .english ul li {
+  display: flex;
+}
+.header .firsth .all .selectvalue .english ul li a {
+  color: #000;
+  font-weight: 500;
   font-size: 12px;
+  padding: 4px 20px;
+}
+.header .firsth .all .selectvalue .english ul li hr {
+  margin-left: 20px;
+  width: 120px;
+  background-color: rgba(149, 147, 147, 0.322) !important;
+}
+.header .firsth .all .selectvalue .english ul li:hover a {
+  color: #bd9855;
+}
+.header .secondh {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+.header .secondh .searchic {
+  display: flex;
+}
+.header .secondh .searchic i {
+  color: #0c1d32;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 18px;
+}
+.header .secondh .searchic p {
+  font-family: Inter, sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+  padding-left: 18px;
+}
+.header .secondh .searchic:hover i {
+  color: #bd9855;
+}
+.header .secondh .searchic:hover p {
+  color: #bd9855;
+}
+.header .secondh .firstsel {
+  display: flex;
+  margin-left: 230px;
+}
+.header .secondh .firstsel li {
+  display: inline;
+  cursor: pointer;
+}
+.header .secondh .firstsel li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #0c1d32;
+  font-family: Inter, sans-serif;
+}
+.header .secondh .firstsel li:hover a {
+  color: #bd9855;
+}
+.header .secondh .firstsel .other {
+  margin-left: 50px;
+}
+.header .secondh img {
+  width: 85px;
+  margin-left: 100px;
+}
+.header .secondh .secondsel {
+  display: flex;
+  margin-left: 50px;
+}
+.header .secondh .secondsel li {
+  display: inline;
+  cursor: pointer;
+}
+.header .secondh .secondsel li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #0c1d32;
+  font-family: Inter, sans-serif;
+}
+.header .secondh .secondsel li:hover a {
+  color: #bd9855;
+}
+.header .secondh .secondsel .other {
+  margin-left: 50px;
+}
+.header .secondh .main {
+  margin-left: 200px;
+  display: flex;
+}
+.header .secondh .main .user {
+  margin-left: 25px;
+}
+.header .secondh .main .user i {
+  color: #0c1d32;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+}
+.header .secondh .main .user:hover i {
+  color: #bd9855;
+}
+.header .secondh .main .heart {
+  margin-left: 20px;
+  position: relative;
+}
+.header .secondh .main .heart i {
+  color: #0c1d32;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+}
+.header .secondh .main .heart sup {
+  background-color: #bd9855;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  padding-top: 7px;
+  padding-left: 5px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 12px;
+}
+.header .secondh .main .heart:hover i {
+  color: #bd9855;
+}
+.header .secondh .main .basket {
+  margin-left: 40px;
+  position: relative;
+}
+.header .secondh .main .basket i {
+  color: #0c1d32;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+}
+.header .secondh .main .basket sup {
+  background-color: #bd9855;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  padding-top: 7px;
+  padding-left: 5px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 16px;
+}
+.header .secondh .main .basket:hover i {
+  color: #bd9855;
+}
+
+.one .slider {
+  overflow: hidden;
+  position: relative;
+}
+.one .slider .team {
+  width: 100%;
+  position: relative;
+}
+.one .slider .team .mainph {
+  width: 100%;
+}
+.one .slider .team .titleph1 {
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: 420px;
+}
+.one .slider .team .titleph1 .subtitle {
+  color: #bd9855;
+  font-size: 17px;
+  font-family: Inter, sans-serif;
+  padding-left: 130px;
+  letter-spacing: 3px;
+}
+.one .slider .team .titleph1 .firpart {
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+  font-size: 40px;
+  height: 0;
+  letter-spacing: 3px;
+}
+.one .slider .team .titleph1 .secpart {
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+  font-size: 40px;
+  padding-top: 37px;
+  letter-spacing: 3px;
+  padding-left: 185px;
+}
+.one .slider .team .titleph1 .shbtn {
+  position: relative;
+  width: 187px;
+}
+.one .slider .team .titleph1 .shbtn button {
+  justify-content: space-between;
+  border: none;
+  background-color: #0c1d32;
+  color: white;
+  width: 187px;
+  height: 50px;
+  font-size: 11px;
+  margin-left: 215px;
+  margin-top: 20px;
+  font-family: Inter, sans-serif;
+  padding-top: 5px;
+}
+.one .slider .team .titleph1 .shbtn button:hover {
+  background-color: #bd9855;
+}
+.one .slider .team .titleph1 .shbtn .handwine {
+  width: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  margin-left: 215px;
+  margin-top: 30px;
+}
+.one .slider .team .titleph2 {
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: 500px;
+}
+.one .slider .team .titleph2 .subtitle {
+  color: #bd9855;
+  font-size: 17px;
+  font-family: Inter, sans-serif;
+  padding-left: 110px;
+  letter-spacing: 3px;
+}
+.one .slider .team .titleph2 .firpart {
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+  font-size: 40px;
+  height: 0;
+  letter-spacing: 3px;
+}
+.one .slider .team .titleph2 .secpart {
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+  font-size: 40px;
+  padding-top: 37px;
+  letter-spacing: 3px;
+  padding-left: 70px;
+}
+.one .slider .team .titleph2 .shbtn {
+  position: relative;
+  width: 187px;
+}
+.one .slider .team .titleph2 .shbtn button {
+  justify-content: space-between;
+  border: none;
+  background-color: #0c1d32;
+  color: white;
+  width: 187px;
+  height: 50px;
+  font-size: 11px;
+  margin-left: 150px;
+  margin-top: 20px;
+  font-family: Inter, sans-serif;
+  padding-top: 5px;
+}
+.one .slider .team .titleph2 .shbtn button:hover {
+  background-color: #bd9855;
+}
+.one .slider .team .titleph2 .shbtn .handwine {
+  width: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+.one .slider .team .titleph3 {
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: 550px;
+}
+.one .slider .team .titleph3 .subtitle {
+  color: #bd9855;
+  font-size: 17px;
+  font-family: Inter, sans-serif;
+  padding-left: 70px;
+  letter-spacing: 3px;
+}
+.one .slider .team .titleph3 .firpart {
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+  font-size: 40px;
+  height: 0;
+  letter-spacing: 3px;
+}
+.one .slider .team .titleph3 .secpart {
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+  font-size: 40px;
+  padding-top: 37px;
+  letter-spacing: 3px;
+  padding-left: 100px;
+}
+.one .slider .team .titleph3 .shbtn {
+  position: relative;
+  width: 187px;
+}
+.one .slider .team .titleph3 .shbtn button {
+  justify-content: space-between;
+  border: none;
+  background-color: #0c1d32;
+  color: white;
+  width: 187px;
+  height: 50px;
+  font-size: 11px;
+  margin-left: 75px;
+  margin-top: 20px;
+  font-family: Inter, sans-serif;
+  padding-top: 5px;
+}
+.one .slider .team .titleph3 .shbtn button:hover {
+  background-color: #bd9855;
+}
+.one .slider .team .titleph3 .shbtn .handwine {
+  width: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 30px;
+}
+.one .slider .licons {
+  background-color: rgb(211, 211, 211);
+  margin-top: 300px;
+  margin-left: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 17px;
+  padding-left: 22px;
+  color: white;
+  font-size: 22px;
+}
+.one .slider .licons .slick-arrow {
+  font-size: 20px;
+}
+.one .slider .ricons {
+  background-color: rgb(211, 211, 211);
+  right: 50px;
+  top: 300px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 17px;
+  padding-left: 22px;
+  color: white;
+  font-size: 22px;
+}
+.one .slider .ricons .slick-arrow {
+  font-size: 20px;
+}
+.one .slider .ricons:hover,
+.one .slider .licons:hover {
+  background-color: #bd9855;
+  color: white;
+}
+.one .slider .slick-dots {
+  position: absolute;
+  bottom: 5px;
+  left: 9%;
+  bottom: 6%;
+  transform: translateX(-50%);
+}
+.one .slider .slick-dots li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 5px;
+}
+.one .slider .slick-dots li button {
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 2px 7px 2px #888888;
+}
+.one .slider .slick-dots .slick-active button {
+  background-color: rgb(159, 217, 222);
+  width: 25px;
+  border-radius: 10px;
+}
+
+.two {
+  margin-top: 80px;
+}
+.two .generalcart {
+  display: flex;
+  justify-content: space-between;
+}
+.two .generalcart .cart1 {
+  border: 1px solid #dddddd;
+  width: 350px;
+  height: 160px;
+}
+.two .generalcart .cart1 .free {
+  color: #0c1d32;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.two .generalcart .cart1 .store {
+  color: #6d7784;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 115px;
+}
+.two .generalcart .cart2 {
+  border: 1px solid #dddddd;
+  width: 350px;
+  height: 160px;
+}
+.two .generalcart .cart2 .free {
+  color: #0c1d32;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 50px;
+  padding-left: 110px;
+}
+.two .generalcart .cart2 .store {
+  color: #6d7784;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 95px;
+}
+.two .generalcart .cart3 {
+  border: 1px solid #dddddd;
+  width: 350px;
+  height: 160px;
+}
+.two .generalcart .cart3 .free {
+  color: #0c1d32;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.two .generalcart .cart3 .store {
+  color: #6d7784;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 100px;
+}
+.two .generalcart .cart4 {
+  border: 1px solid #dddddd;
+  width: 350px;
+  height: 160px;
+}
+.two .generalcart .cart4 .free {
+  color: #0c1d32;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.two .generalcart .cart4 .store {
+  color: #6d7784;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 115px;
+}
+
+.three {
+  margin-top: 90px;
+}
+.three .rose {
+  font-size: 28px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
 }/*# sourceMappingURL=main.css.map */
