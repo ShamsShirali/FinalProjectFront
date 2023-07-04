@@ -529,7 +529,7 @@
   box-shadow: 0px 2px 7px 2px #888888;
 }
 .one .slider .slick-dots .slick-active button {
-  background-color: rgb(159, 217, 222);
+  background-color: rgb(184, 219, 223);
   width: 25px;
   border-radius: 10px;
 }
@@ -644,4 +644,67 @@
   letter-spacing: 1px;
   color: #0c1d32;
   font-family: Libre Baskerville, serif;
+}
+.three .generalcart {
+  margin-top: 50px;
+}
+.three .generalcart .card {
+  border: none;
+}
+.three .generalcart .card .photo {
+  position: relative;
+  height: 321px;
+  width: 100%;
+}
+.three .generalcart .card .photo img {
+  position: absolute;
+  background: transparent;
+  height: 321px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.three .generalcart .card .photo .timer {
+  position: absolute;
+  display: flex;
+  margin-left: 50px;
+}
+.three .generalcart .card .photo .timer .times {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  margin-top: 260px;
+}
+.three .generalcart .card .photo .timer .times span {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 7px;
+}
+.three .generalcart .card .photo .timer .times p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d7784;
+  padding-left: 5px;
+}
+.three .generalcart .card .photo .timer .timesec {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  margin-top: 260px;
+  margin-left: 5px;
+}
+.three .generalcart .card .photo .timer .timesec span {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.three .generalcart .card .photo .timer .timesec p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d7784;
+  padding-left: 5px;
 }/*# sourceMappingURL=main.css.map */
