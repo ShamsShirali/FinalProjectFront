@@ -650,6 +650,7 @@
 }
 .three .generalcart .card {
   border: none;
+  overflow: hidden;
 }
 .three .generalcart .card .photo {
   position: relative;
@@ -664,47 +665,323 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-.three .generalcart .card .photo .timer {
+.three .generalcart .card .percent {
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  position: absolute;
+  font-weight: 500;
+  width: 65px;
+  height: 25px;
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+.three .generalcart .card .heart {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.three .generalcart .card .arrow {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 65px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.three .generalcart .card .glass {
+  color: #000;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 115px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.three .generalcart .card .timer {
   position: absolute;
   display: flex;
-  margin-left: 50px;
+  margin-left: 49px;
 }
-.three .generalcart .card .photo .timer .times {
+.three .generalcart .card .timer .times {
   width: 45px;
   height: 45px;
   background-color: white;
   margin-top: 260px;
 }
-.three .generalcart .card .photo .timer .times span {
+.three .generalcart .card .timer .times span {
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 600;
   padding-left: 7px;
 }
-.three .generalcart .card .photo .timer .times p {
+.three .generalcart .card .timer .times p {
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #6d7784;
   padding-left: 5px;
 }
-.three .generalcart .card .photo .timer .timesec {
+.three .generalcart .card .timer .timesec {
   width: 45px;
   height: 45px;
   background-color: white;
   margin-top: 260px;
   margin-left: 5px;
 }
-.three .generalcart .card .photo .timer .timesec span {
+.three .generalcart .card .timer .timesec span {
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 600;
   padding-left: 15px;
 }
-.three .generalcart .card .photo .timer .timesec p {
+.three .generalcart .card .timer .timesec p {
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #6d7784;
   padding-left: 5px;
+}
+.three .generalcart .card .add p {
+  opacity: 1;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  position: absolute;
+  width: 92%;
+  height: 60px;
+  bottom: -60px;
+  right: 12px;
+  margin: 0;
+  padding-left: 90px;
+  padding-top: 19px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.three .generalcart .card .add:hover p {
+  background-color: #bd9855;
+}
+.three .generalcart .card:hover .heart {
+  display: inline !important;
+}
+.three .generalcart .card:hover .arrow {
+  display: inline !important;
+}
+.three .generalcart .card:hover .glass {
+  display: inline !important;
+}
+.three .generalcart .card:hover .timer {
+  display: none !important;
+}
+.three .generalcart .card:hover .add p {
+  opacity: 1;
+  bottom: 0;
+}
+.three .generalcart .firfloor {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.three .generalcart .firfloor .stars1 {
+  display: inline;
+}
+.three .generalcart .firfloor .stars1 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .generalcart .firfloor .stars2 {
+  display: inline;
+}
+.three .generalcart .firfloor .stars2 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .generalcart .firfloor .stars3 {
+  display: inline;
+}
+.three .generalcart .firfloor .stars3 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .generalcart .firfloor .stars4 {
+  display: inline;
+}
+.three .generalcart .firfloor .stars4 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .generalcart .firfloor .stars5 {
+  display: inline;
+}
+.three .generalcart .firfloor .stars5 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .generalcart .firfloor .stars6 {
+  display: inline;
+}
+.three .generalcart .firfloor .stars6 .st {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(239, 239, 53);
+}
+.three .generalcart .firfloor .reviews {
+  color: #666;
+  padding-left: 5px;
+}
+.three .generalcart .title {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 53px;
+  height: 0;
+}
+.three .generalcart .title:hover {
+  color: #bd9855;
+}
+.three .generalcart .title1 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 78px;
+  height: 0;
+}
+.three .generalcart .title1:hover {
+  color: #bd9855;
+}
+.three .generalcart .title2 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 59px;
+  height: 0;
+}
+.three .generalcart .title2:hover {
+  color: #bd9855;
+}
+.three .generalcart .title3 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 46px;
+  height: 0;
+}
+.three .generalcart .title3:hover {
+  color: #bd9855;
+}
+.three .generalcart .title4 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 69px;
+  height: 0;
+}
+.three .generalcart .title4:hover {
+  color: #bd9855;
+}
+.three .generalcart .title5 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 37px;
+  height: 0;
+}
+.three .generalcart .title5:hover {
+  color: #bd9855;
+}
+.three .generalcart .price {
+  color: #bd9855;
+  padding-left: 100px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.three .generalcart .diswithpri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.three .generalcart .diswithpri .discount {
+  height: 0;
+  font-size: 15px;
+  color: #796b6b;
+  text-decoration: line-through;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.three .generalcart .diswithpri .pricewith {
+  color: #bd9855;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.three .licons {
+  background-color: rgb(211, 211, 211);
+  margin-top: 160px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 12px;
+  padding-left: 15px;
+  color: white;
+  font-size: 19px;
+}
+.three .licons .slick-arrow {
+  font-size: 20px;
+}
+.three .ricons {
+  background-color: rgb(211, 211, 211);
+  right: -10px;
+  top: 160px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 12px;
+  padding-left: 15px;
+  color: white;
+  font-size: 19px;
+}
+.three .ricons .slick-arrow {
+  font-size: 20px;
+}
+.three .ricons:hover,
+.three .licons:hover {
+  background-color: #bd9855;
+  color: white;
+}
+.three .slick-dots {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */
