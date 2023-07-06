@@ -1191,4 +1191,80 @@
   color: #0c1d32;
   text-align: center;
   font-family: Libre Baskerville, serif;
+}
+.five .testimonials .testimonial {
+  margin-left: 280px;
+  margin-top: 50px;
+}
+.five .testimonials .testimonial .message {
+  text-align: center;
+  width: 900px;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #3d4a5b;
+  margin: 0px 0px 30px 0px;
+  font-family: Libre Baskerville, serif;
+}
+.five .testimonials .testimonial .name {
+  height: 0;
+  text-align: center;
+  padding-right: 270px;
+  font-size: 10px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #0c1d32;
+  letter-spacing: 4px;
+}
+.five .testimonials .testimonial .specialty {
+  text-align: center;
+  padding-right: 270px;
+  font-size: 11px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #6d7784;
+  letter-spacing: 0px;
+  font-family: Libre Baskerville, serif;
+}
+.five .licons {
+  background-color: rgb(211, 211, 211);
+  margin-top: 100px;
+  left: -10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 16px;
+  padding-left: 19px;
+  color: white;
+  font-size: 19px;
+}
+.five .licons .slick-arrow {
+  font-size: 20px;
+}
+.five .ricons {
+  background-color: rgb(211, 211, 211);
+  right: -10px;
+  top: 100px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 16px;
+  padding-left: 19px;
+  color: white;
+  font-size: 19px;
+}
+.five .ricons .slick-arrow {
+  font-size: 20px;
+}
+.five .ricons:hover,
+.five .licons:hover {
+  background-color: #bd9855;
+  color: white;
+}
+.five .slick-dots {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */
