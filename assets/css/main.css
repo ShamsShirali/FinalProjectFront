@@ -650,12 +650,12 @@
 }
 .three .generalcart .card {
   border: none;
-  overflow: hidden;
 }
 .three .generalcart .card .photo {
   position: relative;
   height: 321px;
   width: 100%;
+  overflow: hidden;
 }
 .three .generalcart .card .photo img {
   position: absolute;
@@ -664,6 +664,24 @@
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.three .generalcart .card .photo .add p {
+  opacity: 0;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  position: absolute;
+  width: 92%;
+  height: 60px;
+  bottom: -60px;
+  right: 12px;
+  margin: 0;
+  padding-left: 90px;
+  padding-top: 19px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.three .generalcart .card .photo .add:hover p {
+  background-color: #bd9855;
 }
 .three .generalcart .card .percent {
   background: #fff;
@@ -776,24 +794,6 @@
   font-weight: 400;
   color: #6d7784;
   padding-left: 5px;
-}
-.three .generalcart .card .add p {
-  opacity: 0;
-  background-color: rgb(29, 29, 29);
-  color: white;
-  position: absolute;
-  width: 92%;
-  height: 60px;
-  bottom: -60px;
-  right: 12px;
-  margin: 0;
-  padding-left: 90px;
-  padding-top: 19px;
-  font-size: 14px;
-  transition: all 0.5s;
-}
-.three .generalcart .card .add:hover p {
-  background-color: #bd9855;
 }
 .three .generalcart .card:hover .heart {
   display: inline !important;
@@ -1192,6 +1192,9 @@
   text-align: center;
   font-family: Libre Baskerville, serif;
 }
+.five .testimonials {
+  overflow: hidden;
+}
 .five .testimonials .testimonial {
   margin-left: 280px;
   margin-top: 50px;
@@ -1229,7 +1232,7 @@
 .five .licons {
   background-color: rgb(211, 211, 211);
   margin-top: 100px;
-  left: -10px;
+  left: 40px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1239,13 +1242,15 @@
   padding-left: 19px;
   color: white;
   font-size: 19px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 .five .licons .slick-arrow {
   font-size: 20px;
 }
 .five .ricons {
   background-color: rgb(211, 211, 211);
-  right: -10px;
+  right: 40px;
   top: 100px;
   width: 60px;
   height: 60px;
@@ -1256,6 +1261,8 @@
   padding-left: 19px;
   color: white;
   font-size: 19px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 .five .ricons .slick-arrow {
   font-size: 20px;
@@ -1267,4 +1274,70 @@
 }
 .five .slick-dots {
   display: none !important;
+}
+
+.six {
+  margin-top: 60px;
+}
+.six .all {
+  position: relative;
+}
+.six .all .main {
+  width: 1460px;
+  height: 646px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+.six .all .wehave {
+  position: absolute;
+  right: 360px;
+  top: 160px;
+}
+.six .all .wehave .free {
+  display: flex;
+  margin-bottom: 20px;
+}
+.six .all .wehave .free .pict {
+  width: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.six .all .wehave .free .pict:hover {
+  animation: horizontal-shaking 0.7s;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.six .all .wehave .free .about {
+  margin-left: 25px;
+}
+.six .all .wehave .free .about .title {
+  color: #0c1d32;
+  font-size: 22px;
+  line-height: 22px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+}
+.six .all .wehave .free .about .topic {
+  width: 300px;
+  color: #3b4757;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: Libre Baskerville, serif;
 }/*# sourceMappingURL=main.css.map */

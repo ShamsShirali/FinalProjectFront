@@ -767,12 +767,12 @@
 
         .card {
             border: none;
-            overflow: hidden;
 
             .photo {
                 position: relative;
                 height: 321px;
                 width: 100%;
+                overflow: hidden;
 
                 img {
                     position: absolute;
@@ -780,6 +780,31 @@
                     height: 321px;
                     width: 100%;
                     object-fit: contain;
+                }
+
+                .add {
+
+                    p {
+                        opacity: 0;
+                        background-color: rgb(29, 29, 29);
+                        color: white;
+                        position: absolute;
+                        width: 92%;
+                        height: 60px;
+                        bottom: -60px;
+                        right: 12px;
+                        margin: 0;
+                        padding-left: 90px;
+                        padding-top: 19px;
+                        font-size: 14px;
+                        transition: all 0.5s;
+                    }
+
+                    &:hover {
+                        p {
+                            background-color: #bd9855;
+                        }
+                    }
                 }
             }
 
@@ -905,32 +930,6 @@
                         font-weight: 400;
                         color: #6d7784;
                         padding-left: 5px;
-                    }
-                }
-            }
-
-            .add {
-
-                p {
-                    opacity: 0;
-                    background-color: rgb(29, 29, 29);
-                    color: white;
-                    position: absolute;
-                    width: 92%;
-                    height: 60px;
-                    bottom: -60px;
-                    right: 12px;
-                    margin: 0;
-                    padding-left: 90px;
-                    padding-top: 19px;
-                    font-size: 14px;
-                    transition: all 0.5s;
-                }
-
-                &:hover {
-
-                    p {
-                        background-color: #bd9855;
                     }
                 }
             }
@@ -1410,6 +1409,7 @@
     }
 
     .testimonials {
+        overflow: hidden;
 
         .testimonial {
             margin-left: 280px;
@@ -1453,7 +1453,7 @@
     .licons {
         background-color: rgb(211, 211, 211);
         margin-top: 100px;
-        left: -10px;
+        left: 40px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -1463,6 +1463,8 @@
         padding-left: 19px;
         color: white;
         font-size: 19px;
+        opacity: 0;
+        transition: all 0.5s;
 
         .slick-arrow {
             font-size: 20px;
@@ -1471,7 +1473,7 @@
 
     .ricons {
         background-color: rgb(211, 211, 211);
-        right: -10px;
+        right: 40px;
         top: 100px;
         width: 60px;
         height: 60px;
@@ -1482,6 +1484,8 @@
         padding-left: 19px;
         color: white;
         font-size: 19px;
+        opacity: 0;
+        transition: all 0.5s;
 
         .slick-arrow {
             font-size: 20px;
@@ -1496,5 +1500,69 @@
 
     .slick-dots {
         display: none !important;
+    }
+}
+
+.six {
+    margin-top: 60px;
+
+    .all {
+        position: relative;
+
+        .main {
+            width: 1460px;
+            height: 646px;
+            object-fit: contain;
+            position: absolute;
+        }
+
+        .wehave {
+            position: absolute;
+            right:360px;
+            top: 160px;
+
+            .free {
+                display: flex;
+                margin-bottom: 20px;
+
+                .pict {
+                    width: 60px;
+                    object-fit: contain;
+
+                    &:hover{
+                        animation: horizontal-shaking 0.7s;
+                    }
+                }
+
+                @keyframes horizontal-shaking {
+                    0% { transform: translateX(0) }
+                    25% { transform: translateX(5px) }
+                    50% { transform: translateX(-5px) }
+                    75% { transform: translateX(5px) }
+                    100% { transform: translateX(0) }
+                  }
+
+                .about {
+                    margin-left: 25px;
+
+                    .title {
+                        color: #0c1d32;
+                        font-size: 22px;
+                        line-height: 22px;
+                        font-family: Libre Baskerville, serif;
+                        font-weight: 500;
+                    }
+
+                    .topic {
+                        width: 300px;
+                        color: #3b4757;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        font-family: Libre Baskerville, serif;
+                    }
+                }
+            }
+        }
     }
 }
