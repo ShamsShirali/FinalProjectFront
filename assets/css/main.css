@@ -1075,37 +1075,30 @@
   width: 79px;
   background: #0c1d32;
   height: 1px;
-  transform: scaleX(1) translateZ(0);
-  transform-origin: right;
-  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
 }
-.four .banner .onebanner .about a:hover .line {
-  transform: scaleX(1.1) translateZ(0);
-  z-index: -1;
-}
-.four .secondbanner {
+.four .banner .onebanner .about .line .secondbanner {
   position: relative;
   overflow: hidden;
   width: 710px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.four .secondbanner img {
+.four .banner .onebanner .about .line .secondbanner img {
   height: auto;
   max-width: 100%;
   transition: 1s all;
   transform: scale(1);
   display: block;
 }
-.four .secondbanner:hover img {
+.four .banner .onebanner .about .line .secondbanner:hover img {
   transform: scale(1.1);
 }
-.four .secondbanner .about {
+.four .banner .onebanner .about .line .secondbanner .about {
   position: absolute;
   top: 80px;
   left: 60px;
 }
-.four .secondbanner .about .titleone {
+.four .banner .onebanner .about .line .secondbanner .about .titleone {
   height: 0;
   font-size: 35px;
   line-height: 45px;
@@ -1114,7 +1107,7 @@
   color: #0c1d32;
   font-family: Libre Baskerville, serif;
 }
-.four .secondbanner .about .titletwo {
+.four .banner .onebanner .about .line .secondbanner .about .titletwo {
   padding-top: 28px;
   font-size: 35px;
   line-height: 45px;
@@ -1123,7 +1116,7 @@
   color: #0c1d32;
   font-family: Libre Baskerville, serif;
 }
-.four .secondbanner .about .subtitleone {
+.four .banner .onebanner .about .line .secondbanner .about .subtitleone {
   height: 0;
   font-size: 14px;
   line-height: 20px;
@@ -1132,7 +1125,7 @@
   color: #0c1d32;
   font-family: Libre Baskerville, serif;
 }
-.four .secondbanner .about .subtitletwo {
+.four .banner .onebanner .about .line .secondbanner .about .subtitletwo {
   margin-top: 20px;
   margin-bottom: 50px;
   font-size: 14px;
@@ -1142,14 +1135,111 @@
   color: #0c1d32;
   font-family: Libre Baskerville, serif;
 }
-.four .secondbanner .about a {
+.four .banner .onebanner .about .line .secondbanner .about a {
   text-decoration: none;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 2px;
   color: #0c1d32;
 }
-.four .secondbanner .about .line {
+.four .banner .onebanner .about .line .secondbanner .about .line {
+  width: 79px;
+  background: #0c1d32;
+  height: 1px;
+}
+.four .banner .onebanner .about .line .secondbanner .about a:hover .line {
+  animation-name: line;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes linee {
+  0% {
+    width: 79px;
+  }
+  25% {
+    width: 30px;
+    margin-left: 39px;
+  }
+  50% {
+    width: 5px;
+    margin-left: 74px;
+  }
+  75% {
+    width: 30px;
+    margin-left: 39px;
+  }
+  100% {
+    width: 79px;
+    margin-left: 0;
+  }
+}
+.four .banner .secondbanner {
+  position: relative;
+  overflow: hidden;
+  width: 710px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.four .banner .secondbanner img {
+  height: auto;
+  max-width: 100%;
+  transition: 1s all;
+  transform: scale(1);
+  display: block;
+}
+.four .banner .secondbanner:hover img {
+  transform: scale(1.1);
+}
+.four .banner .secondbanner .about {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+}
+.four .banner .secondbanner .about .titleone {
+  height: 0;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+}
+.four .banner .secondbanner .about .titletwo {
+  padding-top: 28px;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+}
+.four .banner .secondbanner .about .subtitleone {
+  height: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+}
+.four .banner .secondbanner .about .subtitletwo {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #0c1d32;
+  font-family: Libre Baskerville, serif;
+}
+.four .banner .secondbanner .about a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #0c1d32;
+}
+.four .banner .secondbanner .about .line {
   width: 79px;
   background: #0c1d32;
   height: 1px;
@@ -1157,7 +1247,7 @@
   transform-origin: right;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
 }
-.four .secondbanner .about a:hover .line {
+.four .banner .secondbanner .about a:hover .line {
   transform: scaleX(1.1) translateZ(0);
   z-index: -1;
 }
@@ -1278,6 +1368,7 @@
 
 .six {
   margin-top: 60px;
+  margin-bottom: 300px;
 }
 .six .all {
   position: relative;
@@ -1340,4 +1431,183 @@
   font-weight: 400;
   line-height: 26px;
   font-family: Libre Baskerville, serif;
+}
+
+footer {
+  margin-top: 760px;
+}
+footer .line {
+  height: 1px;
+  background: #e7e7e7;
+}
+footer .firstpart .title {
+  color: #0c1d32;
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 50px;
+  letter-spacing: 3px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+footer .firstpart .subtitle {
+  color: #3d4a5b;
+  font-size: 15px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+footer .firstpart .but {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-top: 50px;
+}
+footer .firstpart .but input {
+  width: 700px;
+  height: 60px;
+  border: none;
+  border-radius: 7px 0 0 7px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 60px;
+  color: #666;
+  background: rgba(233, 233, 233, 0.677);
+  font-weight: 400;
+  padding: 0 30px;
+}
+footer .firstpart .but button {
+  width: 150px;
+  height: 60px;
+  background-color: rgba(233, 233, 233, 0.677);
+  color: #666;
+  border: none;
+  border-radius: 0 7px 7px 0;
+}
+footer .firstpart .but button:hover {
+  color: #bd9855;
+}
+footer .secondpart {
+  display: flex;
+  justify-content: space-between;
+}
+footer .secondpart .one {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+footer .secondpart .one .location {
+  margin-bottom: 15px;
+  font-family: Libre Baskerville, serif;
+  color: #3d4a5b;
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .secondpart .one .email,
+footer .secondpart .one .phone {
+  margin-bottom: 0;
+  font-family: Libre Baskerville, serif;
+  color: #3d4a5b;
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .secondpart .one .our,
+footer .secondpart .one .number {
+  font-family: Libre Baskerville, serif;
+  color: #3d4a5b;
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .secondpart img {
+  height: 196px;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+footer .secondpart .two {
+  margin-right: 20px;
+}
+footer .secondpart .two .welcome {
+  margin-bottom: 15px;
+  font-family: Libre Baskerville, serif;
+  color: #3d4a5b;
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .secondpart .two .open,
+footer .secondpart .two .week,
+footer .secondpart .two .close {
+  margin-bottom: 0;
+  font-family: Libre Baskerville, serif;
+  color: #3d4a5b;
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .secondpart .two .icon {
+  display: flex;
+  padding-left: 0;
+  padding-top: 21px;
+}
+footer .secondpart .two .icon li {
+  display: inline;
+  cursor: pointer;
+}
+footer .secondpart .two .icon li a {
+  text-decoration: none;
+}
+footer .secondpart .two .icon li a i {
+  color: #0c1d32;
+}
+footer .secondpart .two .icon li:hover i {
+  color: #bd9855;
+}
+footer .secondpart .two .icon .ico {
+  padding-left: 25px;
+}
+footer .thirdpart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+footer .thirdpart .we {
+  display: flex;
+  justify-content: space-between;
+}
+footer .thirdpart .we .year {
+  color: #3d4a5b;
+  font-family: Libre Baskerville, serif;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-left: 20px;
+}
+footer .thirdpart .we .year:hover {
+  color: #bd9855;
+}
+footer .thirdpart .we .privacy {
+  color: #3d4a5b;
+  font-family: Libre Baskerville, serif;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 15px;
+  padding-left: 30px;
+}
+footer .thirdpart .we .privacy:hover {
+  color: #bd9855;
+}
+footer .thirdpart img {
+  width: 286px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

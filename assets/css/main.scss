@@ -1268,6 +1268,196 @@
                     width: 79px;
                     background: #0c1d32;
                     height: 1px;
+
+                    .secondbanner {
+                        position: relative;
+                        overflow: hidden;
+                        width: 710px;
+                        object-fit: contain;
+
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                            transition: 1s all;
+                            transform: scale(1);
+                            display: block;
+                        }
+
+                        &:hover img {
+                            transform: scale(1.1);
+                        }
+
+                        .about {
+                            position: absolute;
+                            top: 80px;
+                            left: 60px;
+
+                            .titleone {
+                                height: 0;
+                                font-size: 35px;
+                                line-height: 45px;
+                                font-weight: 500;
+                                letter-spacing: 3px;
+                                color: #0c1d32;
+                                font-family: Libre Baskerville, serif;
+                            }
+
+                            .titletwo {
+                                padding-top: 28px;
+                                font-size: 35px;
+                                line-height: 45px;
+                                font-weight: 500;
+                                letter-spacing: 3px;
+                                color: #0c1d32;
+                                font-family: Libre Baskerville, serif;
+                            }
+
+                            .subtitleone {
+                                height: 0;
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 400;
+                                letter-spacing: 1px;
+                                color: #0c1d32;
+                                font-family: Libre Baskerville, serif;
+                            }
+
+                            .subtitletwo {
+                                margin-top: 20px;
+                                margin-bottom: 50px;
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 400;
+                                letter-spacing: 1px;
+                                color: #0c1d32;
+                                font-family: Libre Baskerville, serif;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                font-size: 12px;
+                                font-weight: 400;
+                                letter-spacing: 2px;
+                                color: #0c1d32;
+                            }
+
+                            .line {
+                                width: 79px;
+                                background: #0c1d32;
+                                height: 1px;
+                            }
+
+                            a:hover{
+                                .line {
+                                    animation-name: line;
+                                    animation-duration: 2s;
+                                    animation-iteration-count: infinite;
+                                }
+
+                                @keyframes linee {
+                                    0% {
+                                        width: 79px;
+                                    }
+                                    25%{
+                                        width: 30px;
+                                        margin-left: 39px;
+                                    }
+                                    50%{
+                                        width: 5px;
+                                        margin-left: 74px;
+                                    }
+                                    75%{
+                                        width: 30px;
+                                        margin-left: 39px;
+                                    }
+                                    100% {
+                                        width: 79px;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .secondbanner {
+            position: relative;
+            overflow: hidden;
+            width: 710px;
+            object-fit: contain;
+
+            img {
+                height: auto;
+                max-width: 100%;
+                transition: 1s all;
+                transform: scale(1);
+                display: block;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            .about {
+                position: absolute;
+                top: 80px;
+                left: 60px;
+
+                .titleone {
+                    height: 0;
+                    font-size: 35px;
+                    line-height: 45px;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                    color: #0c1d32;
+                    font-family: Libre Baskerville, serif;
+                }
+
+                .titletwo {
+                    padding-top: 28px;
+                    font-size: 35px;
+                    line-height: 45px;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                    color: #0c1d32;
+                    font-family: Libre Baskerville, serif;
+                }
+
+                .subtitleone {
+                    height: 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #0c1d32;
+                    font-family: Libre Baskerville, serif;
+                }
+
+                .subtitletwo {
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #0c1d32;
+                    font-family: Libre Baskerville, serif;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    color: #0c1d32;
+                }
+
+                .line {
+                    width: 79px;
+                    background: #0c1d32;
+                    height: 1px;
                     transform: scaleX(1) translateZ(0);
                     transform-origin: right;
                     transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
@@ -1278,96 +1468,6 @@
                         transform: scaleX(1.1) translateZ(0);
                         z-index: -1;
                     }
-                }
-            }
-        }
-    }
-
-    .secondbanner {
-        position: relative;
-        overflow: hidden;
-        width: 710px;
-        object-fit: contain;
-
-        img {
-            height: auto;
-            max-width: 100%;
-            transition: 1s all;
-            transform: scale(1);
-            display: block;
-        }
-
-        &:hover img {
-            transform: scale(1.1);
-        }
-
-        .about {
-            position: absolute;
-            top: 80px;
-            left: 60px;
-
-            .titleone {
-                height: 0;
-                font-size: 35px;
-                line-height: 45px;
-                font-weight: 500;
-                letter-spacing: 3px;
-                color: #0c1d32;
-                font-family: Libre Baskerville, serif;
-            }
-
-            .titletwo {
-                padding-top: 28px;
-                font-size: 35px;
-                line-height: 45px;
-                font-weight: 500;
-                letter-spacing: 3px;
-                color: #0c1d32;
-                font-family: Libre Baskerville, serif;
-            }
-
-            .subtitleone {
-                height: 0;
-                font-size: 14px;
-                line-height: 20px;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: #0c1d32;
-                font-family: Libre Baskerville, serif;
-            }
-
-            .subtitletwo {
-                margin-top: 20px;
-                margin-bottom: 50px;
-                font-size: 14px;
-                line-height: 20px;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: #0c1d32;
-                font-family: Libre Baskerville, serif;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 12px;
-                font-weight: 400;
-                letter-spacing: 2px;
-                color: #0c1d32;
-            }
-
-            .line {
-                width: 79px;
-                background: #0c1d32;
-                height: 1px;
-                transform: scaleX(1) translateZ(0);
-                transform-origin: right;
-                transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
-            }
-
-            a:hover {
-                .line {
-                    transform: scaleX(1.1) translateZ(0);
-                    z-index: -1;
                 }
             }
         }
@@ -1505,6 +1605,7 @@
 
 .six {
     margin-top: 60px;
+    margin-bottom: 300px;
 
     .all {
         position: relative;
@@ -1518,7 +1619,7 @@
 
         .wehave {
             position: absolute;
-            right:360px;
+            right: 360px;
             top: 160px;
 
             .free {
@@ -1529,18 +1630,32 @@
                     width: 60px;
                     object-fit: contain;
 
-                    &:hover{
+                    &:hover {
                         animation: horizontal-shaking 0.7s;
                     }
                 }
 
                 @keyframes horizontal-shaking {
-                    0% { transform: translateX(0) }
-                    25% { transform: translateX(5px) }
-                    50% { transform: translateX(-5px) }
-                    75% { transform: translateX(5px) }
-                    100% { transform: translateX(0) }
-                  }
+                    0% {
+                        transform: translateX(0)
+                    }
+
+                    25% {
+                        transform: translateX(5px)
+                    }
+
+                    50% {
+                        transform: translateX(-5px)
+                    }
+
+                    75% {
+                        transform: translateX(5px)
+                    }
+
+                    100% {
+                        transform: translateX(0)
+                    }
+                }
 
                 .about {
                     margin-left: 25px;
@@ -1563,6 +1678,216 @@
                     }
                 }
             }
+        }
+    }
+}
+
+footer {
+    margin-top: 760px;
+
+    .line {
+        height: 1px;
+        background: #e7e7e7;
+    }
+
+    .firstpart {
+
+        .title {
+            color: #0c1d32;
+            font-size: 35px;
+            text-transform: uppercase;
+            line-height: 50px;
+            letter-spacing: 3px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .subtitle {
+            color: #3d4a5b;
+            font-size: 15px;
+            font-family: Libre Baskerville, serif;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+        }
+
+        .but {
+            display: flex;
+            justify-content: center;
+            height: 60px;
+            margin-top: 50px;
+
+            input {
+                width: 700px;
+                height: 60px;
+                border: none;
+                border-radius: 7px 0 0 7px;
+                font-family: Inter, sans-serif;
+                font-size: 14px;
+                line-height: 60px;
+                color: #666;
+                background: rgba(233, 233, 233, 0.677);
+                font-weight: 400;
+                padding: 0 30px;
+            }
+
+            button {
+                width: 150px;
+                height: 60px;
+                background-color: rgba(233, 233, 233, 0.677);
+                color: #666;
+                border: none;
+                border-radius: 0 7px 7px 0;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+        }
+    }
+
+    .secondpart {
+        display: flex;
+        justify-content: space-between;
+
+        .one {
+            margin-top: 70px;
+            margin-left: 20px;
+
+            .location {
+                margin-bottom: 15px;
+                font-family: Libre Baskerville, serif;
+                color: #3d4a5b;
+                line-height: 1.9;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .email,
+            .phone {
+                margin-bottom: 0;
+                font-family: Libre Baskerville, serif;
+                color: #3d4a5b;
+                line-height: 1.9;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .our,
+            .number {
+                font-family: Libre Baskerville, serif;
+                color: #3d4a5b;
+                line-height: 1.9;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+
+        img {
+            height: 196px;
+            margin-top: 70px;
+            margin-right: 70px;
+        }
+
+        .two {
+            margin-right: 20px;
+
+            .welcome {
+                margin-bottom: 15px;
+                font-family: Libre Baskerville, serif;
+                color: #3d4a5b;
+                line-height: 1.9;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .open,
+            .week,
+            .close {
+                margin-bottom: 0;
+                font-family: Libre Baskerville, serif;
+                color: #3d4a5b;
+                line-height: 1.9;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .icon {
+                display: flex;
+                padding-left: 0;
+                padding-top: 21px;
+
+                li {
+                    display: inline;
+                    cursor: pointer;
+
+                    a {
+                        text-decoration: none;
+
+                        i {
+                            color: #0c1d32;
+                        }
+                    }
+
+                    &:hover i {
+                        color: #bd9855;
+                    }
+                }
+
+                .ico {
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+
+    .thirdpart {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 20px;
+
+        .we {
+            display: flex;
+            justify-content: space-between;
+
+            .year {
+                color: #3d4a5b;
+                font-family: Libre Baskerville, serif;
+                cursor: pointer;
+                font-weight: 400;
+                line-height: 1.9;
+                font-size: 15px;
+                margin-left: 20px;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+
+            .privacy {
+                color: #3d4a5b;
+                font-family: Libre Baskerville, serif;
+                cursor: pointer;
+                font-weight: 400;
+                line-height: 1.9;
+                font-size: 15px;
+                padding-left: 30px;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+        }
+
+        img {
+            width: 286px;
+            object-fit: contain;
+            margin-right: 20px;
+            margin-bottom: 10px;
         }
     }
 }
