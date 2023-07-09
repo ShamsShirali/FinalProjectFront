@@ -958,7 +958,7 @@
 .three .licons {
   background-color: rgb(211, 211, 211);
   margin-top: 160px;
-  left: -10px;
+  left: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -968,13 +968,14 @@
   padding-left: 15px;
   color: white;
   font-size: 19px;
+  transition: all 0.5s;
 }
 .three .licons .slick-arrow {
   font-size: 20px;
 }
 .three .ricons {
   background-color: rgb(211, 211, 211);
-  right: -10px;
+  right: 10px;
   top: 160px;
   width: 50px;
   height: 50px;
@@ -985,6 +986,7 @@
   padding-left: 15px;
   color: white;
   font-size: 19px;
+  transition: all 0.5s;
 }
 .three .ricons .slick-arrow {
   font-size: 20px;
@@ -1147,32 +1149,6 @@
   background: #0c1d32;
   height: 1px;
 }
-.four .banner .onebanner .about .line .secondbanner .about a:hover .line {
-  animation-name: line;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-@keyframes linee {
-  0% {
-    width: 79px;
-  }
-  25% {
-    width: 30px;
-    margin-left: 39px;
-  }
-  50% {
-    width: 5px;
-    margin-left: 74px;
-  }
-  75% {
-    width: 30px;
-    margin-left: 39px;
-  }
-  100% {
-    width: 79px;
-    margin-left: 0;
-  }
-}
 .four .banner .secondbanner {
   position: relative;
   overflow: hidden;
@@ -1322,7 +1298,7 @@
 .five .licons {
   background-color: rgb(211, 211, 211);
   margin-top: 100px;
-  left: 40px;
+  left: 10px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1332,7 +1308,6 @@
   padding-left: 19px;
   color: white;
   font-size: 19px;
-  opacity: 0;
   transition: all 0.5s;
 }
 .five .licons .slick-arrow {
@@ -1340,7 +1315,7 @@
 }
 .five .ricons {
   background-color: rgb(211, 211, 211);
-  right: 40px;
+  right: 10px;
   top: 100px;
   width: 60px;
   height: 60px;
@@ -1351,7 +1326,6 @@
   padding-left: 19px;
   color: white;
   font-size: 19px;
-  opacity: 0;
   transition: all 0.5s;
 }
 .five .ricons .slick-arrow {

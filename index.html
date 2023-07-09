@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+
     <!-- icon link fa -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -35,7 +38,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
     <div class="header">
         <nav>
@@ -132,7 +135,7 @@
                 <ul class="firstsel">
                     <li><a href="#">HOME</a></li>
                     <li class="other"><a href="#">SHOP</a></li>
-                    <li class="other"><a href="#">PRODUCT</a></li>
+                    <li class="other"><a href="product.html">PRODUCT</a></li>
                 </ul>
 
                 <img src="assets/img/logo-black.png" alt="">
@@ -708,13 +711,17 @@
 
         <div class="thirdpart">
             <div class="we">
-            <p class="year">© RUM.MEN 2023</p>
-            <p class="privacy">PRIVACY & COOKIE POLICY</p>
-        </div>
+                <p class="year">© RUM.MEN 2023</p>
+                <p class="privacy">PRIVACY & COOKIE POLICY</p>
+            </div>
 
             <img src="https://mafoil-wine.myshopify.com/cdn/shop/files/payment.png?v=1684309968" alt="">
         </div>
     </footer>
+
+    <!-- aos animation js -->
+    <script src="assets/js/aos.js"></script>
+
     <!-- bootstrap js link -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -732,8 +739,12 @@
 
     <script src="assets/slick/slick.min.js"></script>
 
-    <!-- our js link -->
+    <!-- aos animation js -->
+    <script>
+        AOS.init();
+    </script>
 
+    <!-- our js link -->
     <script src="assets/js/script.js"></script>
 </body>
 

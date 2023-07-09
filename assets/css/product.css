@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Inter&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1480px;
+  margin: auto;
+}
+
+.one {
+  margin-top: 40px;
+}
+.one .switch {
+  display: flex;
+}
+.one .switch .first {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.one .switch .first:hover {
+  color: #bd9855;
+}
+.one .switch .second {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+.one .switch .second:hover {
+  color: #bd9855;
+}
+.one .switch i {
+  color: #666;
+  font-size: 10px;
+  padding-top: 6px;
+  margin-left: 14px;
+}
+.one .switch .select {
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+
+.two .picture {
+  display: flex;
+  position: relative;
+}
+.two .picture .otherpic .photo1 {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 82.6px;
+  opacity: 0.3;
+}
+.two .picture .otherpic .photo2 {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 82.6px;
+}
+.two .picture .otherpic .photo3 {
+  width: 120px;
+  height: 140px;
+  margin-bottom: 82.6px;
+  opacity: 0.3;
+}
+.two .picture .otherpic .photo4 {
+  width: 120px;
+  height: 140px;
+  opacity: 0.3;
+}
+.two .picture .here .slc {
+  height: 808px;
+  width: 673px;
+}
+.two .picture .here .percent {
+  background: #fff;
+  font-size: 13px;
+  color: #000;
+  position: absolute;
+  font-weight: 500;
+  width: 65px;
+  height: 25px;
+  z-index: 1;
+  padding-left: 15px;
+  padding-top: 2px;
+  right: 10px;
+  bottom: 750px;
+}
+.two .general {
+  display: flex;
+}
+.two .general .titles .family {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.two .general .titles .family:hover {
+  color: #bd9855;
+}
+.two .general .titles .select {
+  font-family: Libre Baskerville, serif;
+  color: #000;
+  font-size: 26px;
+}
+.two .general .heart {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 43px;
+  border: 1px solid #e6e6e6;
+}
+.two .general .heart a i {
+  color: #000;
+  padding-left: 13px;
+}
+.two .general .heart:hover .heart {
+  color: #bd9855;
+}
+.two .general .heart:hover i {
+  color: white;
+}
+.two .firfloor {
+  display: flex;
+  padding-top: 10px;
+}
+.two .firfloor .st {
+  color: #c6c6c6;
+  display: inline;
+  cursor: pointer;
+  font-size: 12px;
+}
+.two .firfloor .reviews {
+  color: #666;
+  padding-left: 5px;
+}
+.two .discount {
+  line-height: 100%;
+  font-weight: 500;
+  color: #666;
+  font-family: Inter, sans-serif;
+  text-decoration: line-through;
+}
+.two .count {
+  line-height: 100%;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  font-size: 25px;
+}
+.two .text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.two .line {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.two .check {
+  display: flex;
+}
+.two .check i {
+  font-size: 14px;
+  color: rgb(31, 150, 31);
+  margin-top: 5px;
+}
+.two .check p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(31, 150, 31);
+  padding-left: 10px;
+}
+.two .see {
+  display: flex;
+}
+.two .see i {
+  font-size: 16px;
+  color: #000;
+  margin-top: 5px;
+}
+.two .see p {
+  color: #000;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+.two .fire {
+  display: flex;
+}
+.two .fire i {
+  font-size: 20px;
+  color: #f11e1e;
+  margin-top: 5px;
+}
+.two .fire p {
+  color: #f11e1e;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+.two .stock {
+  color: #000;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.two .stock span {
+  color: #f11e1e;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.adbtn .count {
+  display: flex;
+  border: 1px solid rgb(200, 199, 199);
+  width: 193px;
+  height: 48px;
+  margin-top: 10px;
+}
+.adbtn .count button:nth-child(1) {
+  width: 55px;
+  height: 46px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-right: 1px solid rgb(200, 199, 199);
+  color: rgb(0, 0, 0);
+}
+.adbtn .count button:nth-child(1):hover {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.adbtn .count button:nth-child(3) {
+  width: 55px;
+  height: 46px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-left: 1px solid rgb(200, 199, 199);
+  color: #000;
+  border-radius: 7px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.adbtn .count button:nth-child(3):hover {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+.adbtn .count h2 {
+  color: #000;
+  margin: 10px 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.adbtn #add {
+  width: 400px;
+  height: 48px;
+  background-color: #000;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.adbtn #add:hover {
+  opacity: 0.8;
+}
+
+.buy {
+  border-color: rgba(0, 0, 0, 0.2509803922);
+  font-size: 14px;
+  line-height: 48px;
+  height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  width: 100%;
+  margin: 3px 0;
+  font-weight: 500;
+  border: 1px solid black;
+  color: #6c757d;
+}
+
+.deliver {
+  display: flex;
+  background-color: rgba(209, 209, 209, 0.7568627451);
+}
+.deliver i {
+  font-size: 25px;
+  color: #000;
+}
+.deliver .delivery {
+  font-size: 12px;
+  font-family: Libre Baskerville, serif;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+}
+.deliver .intext {
+  color: #666;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.deliver .intext span {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #000;
+}
+
+.bank {
+  width: 505px;
+  height: 136px;
+  position: relative;
+}
+.bank img {
+  width: 432px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+.bank .secure {
+  position: absolute;
+  color: #000;
+  letter-spacing: 1px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}/*# sourceMappingURL=product.css.map */
