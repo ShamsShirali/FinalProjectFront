@@ -199,13 +199,15 @@
                 cursor: pointer;
                 padding-left: 30px;
                 font-size: 18px;
+                padding-top: 5px;
             }
 
-            p {
+            .find {
                 font-family: Inter, sans-serif;
                 cursor: pointer;
                 font-size: 12px;
                 padding-left: 18px;
+                padding-bottom: 20px;
             }
 
             &:hover {
@@ -213,10 +215,35 @@
                     color: #bd9855;
                 }
 
-                p {
+                .find {
                     color: #bd9855;
                 }
             }
+
+            .modl{
+                right: 520px;
+                bottom: 30px;
+            
+            .mdl {
+                height: 100px;
+                width: 1600px;
+                border-radius: 0;
+
+                .inmodal {
+
+                    #search {
+                        margin-left: 20px;
+                        margin-top: 30px;
+                        border: none;
+                        font-size: 23px;
+                    }
+
+                    .iks{
+                        margin-left: 1200px;
+                    }
+                }
+            }
+        }
         }
 
         .firstsel {
@@ -279,7 +306,7 @@
             display: flex;
 
             .user {
-                margin-left: 25px;
+                margin-right: 10px;
 
                 i {
                     color: #0c1d32;
@@ -295,7 +322,8 @@
             }
 
             .heart {
-                margin-left: 20px;
+                margin-right: 10px;
+                margin-top: 7px;
                 position: relative;
 
                 i {
@@ -325,6 +353,7 @@
             }
 
             .basket {
+                margin-top: 7px;
                 margin-left: 40px;
                 position: relative;
 
@@ -354,6 +383,11 @@
                 }
             }
         }
+    }
+
+    .line {
+        height: 1px;
+        background: #e7e7e7;
     }
 }
 
@@ -959,179 +993,128 @@
                     }
                 }
             }
-        }
 
-        .firfloor {
-            display: flex;
-            padding-left: 50px;
-            padding-top: 10px;
-
-            .stars1 {
-                display: inline;
+            .firfloor {
+                display: flex;
+                margin-top: 20px;
+                margin-left: 90px;
 
                 .st {
+                    color: #c6c6c6;
+                    display: inline;
                     cursor: pointer;
-                    font-size: 12px;
-                    color: rgb(239, 239, 53);
+                    font-size: 8px;
+                }
+
+                .reviews {
+                    color: #666;
+                    padding-left: 5px;
+                    padding-top: 5px;
+                    font-size: 14px;
                 }
             }
 
-            .stars2 {
-                display: inline;
-
-                .st {
-                    cursor: pointer;
-                    font-size: 12px;
-                    color: rgb(239, 239, 53);
-                }
-            }
-
-            .stars3 {
-                display: inline;
-
-                .st {
-                    cursor: pointer;
-                    font-size: 12px;
-                    color: rgb(239, 239, 53);
-                }
-            }
-
-            .stars4 {
-                display: inline;
-
-                .st {
-                    cursor: pointer;
-                    font-size: 12px;
-                    color: rgb(239, 239, 53);
-                }
-            }
-
-            .stars5 {
-                display: inline;
-
-                .st {
-                    cursor: pointer;
-                    font-size: 12px;
-                    color: rgb(239, 239, 53);
-                }
-            }
-
-            .stars6 {
-                display: inline;
-
-                .st {
-                    cursor: pointer;
-                    font-size: 12px;
-                    color: rgb(239, 239, 53);
-                }
-            }
-
-            .reviews {
-                color: #666;
-                padding-left: 5px;
-            }
-        }
-
-        .title {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 53px;
-            height: 0;
-
-            &:hover {
-                color: #bd9855;
-            }
-        }
-
-        .title1 {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 78px;
-            height: 0;
-
-            &:hover {
-                color: #bd9855;
-            }
-        }
-
-        .title2 {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 59px;
-            height: 0;
-
-            &:hover {
-                color: #bd9855;
-            }
-        }
-
-        .title3 {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 46px;
-            height: 0;
-
-            &:hover {
-                color: #bd9855;
-            }
-        }
-
-        .title4 {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 69px;
-            height: 0;
-
-            &:hover {
-                color: #bd9855;
-            }
-        }
-
-        .title5 {
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 400;
-            padding-left: 37px;
-            height: 0;
-
-            &:hover {
-                color: #bd9855;
-            }
-        }
-
-        .price {
-            color: #bd9855;
-            padding-left: 100px;
-            padding-top: 10px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        .diswithpri {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .discount {
+            .title {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 53px;
                 height: 0;
-                font-size: 15px;
-                color: #796b6b;
-                text-decoration: line-through;
-                padding-bottom: 10px;
-                padding-left: 10px;
+
+                &:hover {
+                    color: #bd9855;
+                }
             }
 
-            .pricewith {
+            .title1 {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 78px;
+                height: 0;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+
+            .title2 {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 59px;
+                height: 0;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+
+            .title3 {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 46px;
+                height: 0;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+
+            .title4 {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 69px;
+                height: 0;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+
+            .title5 {
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 37px;
+                height: 0;
+
+                &:hover {
+                    color: #bd9855;
+                }
+            }
+
+            .price {
                 color: #bd9855;
+                padding-left: 100px;
                 padding-top: 10px;
                 font-size: 18px;
                 font-weight: 500;
-                padding-left: 5px;
+            }
+
+            .diswithpri {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .discount {
+                    height: 0;
+                    font-size: 15px;
+                    color: #796b6b;
+                    text-decoration: line-through;
+                    padding-bottom: 10px;
+                    padding-left: 10px;
+                }
+
+                .pricewith {
+                    color: #bd9855;
+                    padding-top: 10px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding-left: 5px;
+                }
             }
         }
     }

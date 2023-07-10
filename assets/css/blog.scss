@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Inter&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1480px;
+    margin: auto;
+}
+
+.one {
+
+    .main {
+        font-size: 40px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        font-family: Libre Baskerville, serif;
+        color: #000;
+        line-height: 1.2;
+    }
+
+    .switch {
+        display: flex;
+        justify-content: center;
+
+        .first {
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            line-height: 22px;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+
+            &:hover {
+                color: #bd9855;
+            }
+        }
+
+        i {
+            color: #666;
+            font-size: 10px;
+            padding-top: 6px;
+            margin-left: 14px;
+        }
+
+        .select {
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+            line-height: 22px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            line-height: 1.5;
+            padding-left: 14px;
+        }
+    }
+}
+
+.two{
+    
+}

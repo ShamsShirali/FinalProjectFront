@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- aos animation link -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+  <!-- icon link fa -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap link -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!-- bootstrap icon link -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+    integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- slick link -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> 
+        <link rel="stylesheet" href="assets/slick/slick-theme.css">  -->
+  <link rel="stylesheet" href="assets/slick/slick-theme.less">
+
+  <!-- our css link-->
+  <link rel="stylesheet" href="assets/css/shop.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="one">
+    <div class="container">
+      <p class="main">PRODUCTS</p>
+
+      <div class="switch">
+        <p class="first">Home</p>
+        <i class="fa-solid fa-chevron-right"></i>
+        <p class="select">Products</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="two">
+    <div class="container">
+      <div class="row acdgen">
+        <div class="col-3 filt">
+          <div class="accordion gener" id="accordionExample">
+            <div class="accordion-item collec">
+              <h2 class="accordion-header name">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  COLLECTIONS
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show inthis" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <a href=""></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  AVAILABILITY
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  BRAND
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  FEATURE PRODUCT
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9 prodsel">
+          <div class="english dropdown">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Alphabetically, A-Z
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Featured</a></li>
+              <li><a class="dropdown-item" href="#">Best selling</a></li>
+              <li><a class="dropdown-item" href="#">Alphabetically, A-Z</a></li>
+              <li><a class="dropdown-item" href="#">Alphabetically, Z-A</a></li>
+              <li><a class="dropdown-item" href="#">Price, low to high</a></li>
+              <li><a class="dropdown-item" href="#">Price, high to low</a></li>
+              <li><a class="dropdown-item" href="#">Date, old to new</a></li>
+              <li><a class="dropdown-item" href="#">Date, new to old</a></li>
+            </ul>
+          </div>
+
+          <div class="prodone">
+            <div class="card" style="width: 18rem;">
+              <div class="photo">
+                <img src="assets/img/Image-21_360x.webp" class="card-img-top" alt="...">
+
+                <p class="percent">- 20%</p>
+
+                <i class="fa-regular fa-heart heart d-none"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                <div class="timer">
+                  <div class="times">
+                    <span class="days"></span>
+                    <p>Days</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="hours"> </span>
+                    <p>Hours</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="minutes"></span>
+                    <p>Mins</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="seconds"></span>
+                    <p>Secs</p>
+                  </div>
+                </div>
+
+                <div class="add">
+                  <p>ADD TO CART</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="firfloor">
+                  <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                  </div>
+
+                  <p class="reviews">No reviews</p>
+                </div>
+
+                <p class="title1">WHITE WINE</p>
+
+                <div class="diswithpri">
+                  <P class="discount">$150.00</P>
+                  <p class="pricewith">$120.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="photo">
+                <img src="assets/img/Image-11_360x.webp" class="card-img-top" alt="...">
+
+                <i class="fa-regular fa-heart heart d-none"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                <div class="timer">
+                  <div class="times">
+                    <span class="days"></span>
+                    <p>Days</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="hours"> </span>
+                    <p>Hours</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="minutes"></span>
+                    <p>Mins</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="seconds"></span>
+                    <p>Secs</p>
+                  </div>
+                </div>
+
+                <div class="add">
+                  <p>ADD TO CART</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="firfloor">
+                  <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                  </div>
+
+                  <p class="reviews">No reviews</p>
+                </div>
+
+                <p class="title3">PROSECCO SPUMANTE</p>
+                <p class="price">$200.00</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="photo">
+                <img src="assets/img/Image-6_360x.webp" class="card-img-top" alt="...">
+
+                <p class="percent">- 40%</p>
+
+                <i class="fa-regular fa-heart heart d-none"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                <div class="add">
+                  <p>ADD TO CART</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="firfloor">
+                  <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                  </div>
+
+                  <p class="reviews">No reviews</p>
+                </div>
+
+                <p class="title4">CHARDONNAY</p>
+
+                <div class="diswithpri">
+                  <P class="discount">$250.00</P>
+                  <p class="pricewith">$150.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="photo">
+                <img src="assets/img/Image-7_360x.webp" class="card-img-top" alt="...">
+
+                <i class="fa-regular fa-heart heart d-none"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                <div class="timer">
+                  <div class="times">
+                    <span class="days"></span>
+                    <p>Days</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="hours"> </span>
+                    <p>Hours</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="minutes"></span>
+                    <p>Mins</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="seconds"></span>
+                    <p>Secs</p>
+                  </div>
+                </div>
+
+                <div class="add">
+                  <p>ADD TO CART</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="firfloor">
+                  <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                  </div>
+
+                  <p class="reviews">No reviews</p>
+                </div>
+
+                <p class="title">SUSPENDISSE URNA</p>
+                <p class="price">$230.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prodtwo">
+            <div class="card" style="width: 18rem;">
+              <div class="photo">
+                <img src="assets/img/Image-22_360x.webp" class="card-img-top" alt="...">
+
+                <p class="percent">- 40%</p>
+
+                <i class="fa-regular fa-heart heart d-none"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                <div class="add">
+                  <p>ADD TO CART</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="firfloor">
+                  <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                  </div>
+
+                  <p class="reviews">No reviews</p>
+                </div>
+
+                <p class="title4">CHARDONNAY</p>
+
+                <div class="diswithpri">
+                  <P class="discount">$250.00</P>
+                  <p class="pricewith">$150.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="photo">
+                <img src="assets/img/Image-1_360x.webp" class="card-img-top" alt="...">
+
+                <p class="percent">- 16%</p>
+
+                <i class="fa-regular fa-heart heart d-none"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left arrow d-none"></i>
+                <i class="fa-solid fa-magnifying-glass glass d-none"></i>
+
+                <div class="timer">
+                  <div class="times">
+                    <span class="days"></span>
+                    <p>Days</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="hours"> </span>
+                    <p>Hours</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="minutes"></span>
+                    <p>Mins</p>
+                  </div>
+                  <div class="timesec">
+                    <span class="seconds"></span>
+                    <p>Secs</p>
+                  </div>
+                </div>
+
+                <div class="add">
+                  <p>ADD TO CART</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="firfloor">
+                  <div class="stars6">
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                    <i class="fa-regular fa-star st"></i>
+                  </div>
+
+                  <p class="reviews">No reviews</p>
+                </div>
+
+                <p class="title5">CABERNET SAUVIGNON</p>
+
+                <div class="diswithpri">
+                  <P class="discount">$300.00</P>
+                  <p class="pricewith">$250.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- aos animation js -->
+  <script src="assets/js/aos.js"></script>
+
+  <!-- bootstrap js link -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+
+  <!-- jquery link -->
+
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+
+  <!-- slick link -->
+
+  <script src="assets/slick/slick.min.js"></script>
+
+  <!-- aos animation js -->
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- our js link -->
+  <script src="assets/js/shop.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
