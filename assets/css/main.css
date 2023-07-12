@@ -240,7 +240,8 @@
   margin-left: 50px;
 }
 .header .secondh .main {
-  margin-left: 200px;
+  margin-top: 6px;
+  margin-left: 300px;
   display: flex;
 }
 .header .secondh .main .user {
@@ -257,8 +258,7 @@
   color: #bd9855;
 }
 .header .secondh .main .heart {
-  margin-right: 10px;
-  margin-top: 7px;
+  margin-left: 10px;
   position: relative;
 }
 .header .secondh .main .heart i {
@@ -284,7 +284,6 @@
   color: #bd9855;
 }
 .header .secondh .main .basket {
-  margin-top: 7px;
   margin-left: 40px;
   position: relative;
 }
@@ -309,6 +308,9 @@
 }
 .header .secondh .main .basket:hover i {
   color: #bd9855;
+}
+.header .secondh .main li {
+  display: inline;
 }
 .header .line {
   height: 1px;
@@ -840,7 +842,7 @@
 .three .generalcart .card .firfloor {
   display: flex;
   margin-top: 20px;
-  margin-left: 90px;
+  margin-left: 68px;
 }
 .three .generalcart .card .firfloor .st {
   color: #c6c6c6;

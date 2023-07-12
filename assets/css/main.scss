@@ -220,30 +220,30 @@
                 }
             }
 
-            .modl{
+            .modl {
                 right: 520px;
                 bottom: 30px;
-            
-            .mdl {
-                height: 100px;
-                width: 1600px;
-                border-radius: 0;
 
-                .inmodal {
+                .mdl {
+                    height: 100px;
+                    width: 1600px;
+                    border-radius: 0;
 
-                    #search {
-                        margin-left: 20px;
-                        margin-top: 30px;
-                        border: none;
-                        font-size: 23px;
-                    }
+                    .inmodal {
 
-                    .iks{
-                        margin-left: 1200px;
+                        #search {
+                            margin-left: 20px;
+                            margin-top: 30px;
+                            border: none;
+                            font-size: 23px;
+                        }
+
+                        .iks {
+                            margin-left: 1200px;
+                        }
                     }
                 }
             }
-        }
         }
 
         .firstsel {
@@ -302,7 +302,8 @@
         }
 
         .main {
-            margin-left: 200px;
+            margin-top: 6px;
+            margin-left: 300px;
             display: flex;
 
             .user {
@@ -322,8 +323,7 @@
             }
 
             .heart {
-                margin-right: 10px;
-                margin-top: 7px;
+                margin-left: 10px;
                 position: relative;
 
                 i {
@@ -353,7 +353,6 @@
             }
 
             .basket {
-                margin-top: 7px;
                 margin-left: 40px;
                 position: relative;
 
@@ -381,6 +380,10 @@
                 &:hover i {
                     color: #bd9855;
                 }
+            }
+
+            li {
+                display: inline;
             }
         }
     }
@@ -997,7 +1000,7 @@
             .firfloor {
                 display: flex;
                 margin-top: 20px;
-                margin-left: 90px;
+                margin-left: 68px;
 
                 .st {
                     color: #c6c6c6;
