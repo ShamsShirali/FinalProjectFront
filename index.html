@@ -39,7 +39,7 @@
 
 <body class="overflow-x-hidden">
 
-    <div class="header">
+    <div class="header sticky-top">
         <nav>
             <div class="firsth">
                 <div class="all">
@@ -147,17 +147,17 @@
                     </div>
                 </div>
 
-                <ul class="firstsel">
-                    <li><a href="#">HOME</a></li>
-                    <li class="other"><a href="shop.html">SHOP</a></li>
-                    <li class="other"><a href="product.html">PRODUCT</a></li>
+                <ul class="firstsel selec">
+                    <li><a href="#" class="home" data-id="1">HOME</a></li>
+                    <li class="other"><a href="shop.html" data-id="2">SHOP</a></li>
+                    <li class="other"><a href="product.html" data-id="3">PRODUCT</a></li>
                 </ul>
 
                 <a href="index.html"><img src="assets/img/logo-black.png" alt=""></a>
 
-                <ul class="secondsel">
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li class="other"><a href="about.html">ABOUT US</a></li>
+                <ul class="secondsel selec">
+                    <li><a href="blog.html" data-id="4">BLOG</a></li>
+                    <li class="other"><a href="about.html" data-id="5">ABOUT US</a></li>
                 </ul>
 
                 <ul class="main">
@@ -198,11 +198,13 @@
                             <div class="shbtn">
                                 <img class="handwine" src="assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
                                     alt="">
-                                <a href="shop.html"><button>SHOP NOW</button></a>
+
+                                <a href="shop.html">SHOP NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12">
                     <div class="team">
                         <img class="mainph" src="assets/img/slider-2.webp" alt="">
@@ -215,11 +217,13 @@
                             <div class="shbtn">
                                 <img class="handwine" src="assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
                                     alt="">
-                                <button>SHOP NOW</button>
+
+                                <a href="shop.html">SHOP NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12">
                     <div class="team">
                         <img class="mainph" src="assets/img/slider-3.webp" alt="">
@@ -232,7 +236,8 @@
                             <div class="shbtn">
                                 <img class="handwine" src="assets/img/hand-holding-glaas-of-wine-illustration-png.webp"
                                     alt="">
-                                <button>SHOP NOW</button>
+
+                                <a href="shop.html">SHOP NOW</a>
                             </div>
                         </div>
                     </div>
@@ -678,7 +683,7 @@
         </div>
 
         <div class="secondpart">
-            <div class="one">
+            <div class="onep">
                 <p class="location">VIA SAN MICHELETTO, 337022 FUMANE VERONA, ITALY</p>
 
                 <p class="phone">PHONE</p>
@@ -734,6 +739,8 @@
             <img src="https://mafoil-wine.myshopify.com/cdn/shop/files/payment.png?v=1684309968" alt="">
         </div>
     </footer>
+
+    <button id="myBtn"><i class="fa-solid fa-chevron-up"></i></button>
 
     <!-- aos animation js -->
     <script src="assets/js/aos.js"></script>

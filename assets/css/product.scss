@@ -110,6 +110,8 @@
             .slc {
                 height: 808px;
                 width: 673px;
+                cursor: crosshair;
+                transition: all 0.5s;
             }
 
             .percent {
@@ -125,6 +127,16 @@
                 padding-top: 2px;
                 right: 30px;
                 bottom: 750px;
+            }
+
+            &:hover {
+                .slc {
+                    transform: scale(1.2);
+                }
+
+                .percent {
+                    display: none;
+                }
             }
         }
     }
@@ -724,20 +736,20 @@
                     margin-left: 480px;
                     margin-top: 40px;
                     padding: 20px 50px;
-    height: 60px;
-    border: 2px solid black;
-    color: #000;
-    background-color: white;
-    font-weight: 500;
-    cursor: pointer;
-    font-family: Inter,sans-serif;
-    font-size: 14px;
+                    height: 60px;
+                    border: 2px solid black;
+                    color: #000;
+                    background-color: white;
+                    font-weight: 500;
+                    cursor: pointer;
+                    font-family: Inter, sans-serif;
+                    font-size: 14px;
 
-    &:hover{
-        background-color: #bd9855;
-        border: none;
-        color: white;
-    }
+                    &:hover {
+                        background-color: #bd9855;
+                        border: none;
+                        color: white;
+                    }
                 }
 
                 .subjc {

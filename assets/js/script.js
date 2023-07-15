@@ -1,5 +1,45 @@
 "use strict";
 
+$('.header .secondh .selec li').each(function () {
+  $(this).click(function () {
+    if ($(this).attr("data-id") == 1) {
+      $(this).next().css("color", "#0c1d32");
+      $(this).next().next().css("color", "#0c1d32");
+      $(this).next().next().next().css("color", "#0c1d32");
+      $(this).next().next().next().next().css("color", "#0c1d32");
+      $(this).css("color", "#bd9855");
+    }
+    if ($(this).attr("data-id") == 2) {
+      $(this).prev().css("color", "#0c1d32");
+      $(this).next().css("color", "#0c1d32");
+      $(this).next().next().css("color", "#0c1d32");
+      $(this).next().next().next().css("color", "#0c1d32");
+      $(this).css("color", "#bd9855");
+  }
+  if ($(this).attr("data-id") == 3) {
+      $(this).prev().css("color", "#0c1d32");
+      $(this).prev().prev().css("color", "#0c1d32");
+      $(this).next().css("color", "#0c1d32");
+      $(this).next().next().css("color", "#0c1d32");
+      $(this).css("color", "#bd9855");
+  }
+  if ($(this).attr("data-id") == 4) {
+      $(this).prev().css("color", "#0c1d32");
+      $(this).prev().prev().css("color", "#0c1d32");
+      $(this).prev().prev().prev().css("color", "#0c1d32");
+      $(this).next().css("color", "#0c1d32");
+      $(this).css("color", "#bd9855");
+  }
+  if ($(this).attr("data-id") == 5) {
+      $(this).prev().css("color", "#0c1d32");
+      $(this).prev().prev().css("color", "#0c1d32");
+      $(this).prev().prev().prev().css("color", "#0c1d32");
+      $(this).prev().prev().prev().prev().css("color", "#0c1d32");
+      $(this).css("color", "#bd9855");
+  }
+  })
+})
+
 $(function () {
 
   $('.slider').slick({
@@ -212,4 +252,21 @@ $(document).ready(function () {
       }
     })
   });
+
+  let mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function () { scrollFunction() };
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+      } else {
+          mybutton.style.display = "none";
+      }
+  }
+
+  mybutton.addEventListener("click",topFunction);
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
 })

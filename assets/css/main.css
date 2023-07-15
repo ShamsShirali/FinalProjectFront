@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Inter&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Inter&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel:wght@600&family=Dancing+Script:wght@400;500&family=Inter&family=Pacifico&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,9 @@
   margin: auto;
 }
 
+.header {
+  background-color: white;
+}
 .header .firsth {
   background-color: #0c1d32;
 }
@@ -209,6 +214,9 @@
   color: #0c1d32;
   font-family: Inter, sans-serif;
 }
+.header .secondh .firstsel li .home {
+  color: #bd9855;
+}
 .header .secondh .firstsel li:hover a {
   color: #bd9855;
 }
@@ -357,32 +365,29 @@
   padding-left: 185px;
 }
 .one .slider .team .titleph1 .shbtn {
-  position: relative;
-  width: 187px;
-}
-.one .slider .team .titleph1 .shbtn button {
-  justify-content: space-between;
-  border: none;
-  background-color: #0c1d32;
-  color: white;
   width: 187px;
   height: 50px;
-  font-size: 11px;
-  margin-left: 215px;
-  margin-top: 20px;
-  font-family: Inter, sans-serif;
-  padding-top: 5px;
+  background-color: #0c1d32;
+  margin-left: 210px;
+  margin-top: 37px;
+  display: flex;
 }
-.one .slider .team .titleph1 .shbtn button:hover {
-  background-color: #bd9855;
+.one .slider .team .titleph1 .shbtn a {
+  justify-content: space-between;
+  color: white;
+  font-size: 11px;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-top: 17px;
 }
 .one .slider .team .titleph1 .shbtn .handwine {
   width: 32px;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute;
-  margin-left: 215px;
-  margin-top: 30px;
+}
+.one .slider .team .titleph1 .shbtn:hover {
+  background-color: #bd9855;
 }
 .one .slider .team .titleph2 {
   position: absolute;
@@ -413,32 +418,29 @@
   padding-left: 70px;
 }
 .one .slider .team .titleph2 .shbtn {
-  position: relative;
-  width: 187px;
-}
-.one .slider .team .titleph2 .shbtn button {
-  justify-content: space-between;
-  border: none;
-  background-color: #0c1d32;
-  color: white;
   width: 187px;
   height: 50px;
-  font-size: 11px;
-  margin-left: 150px;
-  margin-top: 20px;
-  font-family: Inter, sans-serif;
-  padding-top: 5px;
+  background-color: #0c1d32;
+  margin-left: 140px;
+  margin-top: 37px;
+  display: flex;
 }
-.one .slider .team .titleph2 .shbtn button:hover {
-  background-color: #bd9855;
+.one .slider .team .titleph2 .shbtn a {
+  justify-content: space-between;
+  color: white;
+  font-size: 11px;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-top: 17px;
 }
 .one .slider .team .titleph2 .shbtn .handwine {
   width: 32px;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute;
-  margin-left: 150px;
-  margin-top: 30px;
+}
+.one .slider .team .titleph2 .shbtn:hover {
+  background-color: #bd9855;
 }
 .one .slider .team .titleph3 {
   position: absolute;
@@ -466,35 +468,32 @@
   font-size: 40px;
   padding-top: 37px;
   letter-spacing: 3px;
-  padding-left: 100px;
+  padding-left: 110px;
 }
 .one .slider .team .titleph3 .shbtn {
-  position: relative;
-  width: 187px;
-}
-.one .slider .team .titleph3 .shbtn button {
-  justify-content: space-between;
-  border: none;
-  background-color: #0c1d32;
-  color: white;
   width: 187px;
   height: 50px;
-  font-size: 11px;
-  margin-left: 75px;
-  margin-top: 20px;
-  font-family: Inter, sans-serif;
-  padding-top: 5px;
+  background-color: #0c1d32;
+  margin-left: 85px;
+  margin-top: 37px;
+  display: flex;
 }
-.one .slider .team .titleph3 .shbtn button:hover {
-  background-color: #bd9855;
+.one .slider .team .titleph3 .shbtn a {
+  justify-content: space-between;
+  color: white;
+  font-size: 11px;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-top: 17px;
 }
 .one .slider .team .titleph3 .shbtn .handwine {
   width: 32px;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute;
-  margin-left: 75px;
-  margin-top: 30px;
+}
+.one .slider .team .titleph3 .shbtn:hover {
+  background-color: #bd9855;
 }
 .one .slider .licons {
   background-color: rgb(211, 211, 211);
@@ -1456,11 +1455,11 @@ footer .secondpart {
   display: flex;
   justify-content: space-between;
 }
-footer .secondpart .one {
+footer .secondpart .onep {
   margin-top: 70px;
   margin-left: 20px;
 }
-footer .secondpart .one .location {
+footer .secondpart .onep .location {
   margin-bottom: 15px;
   font-family: Libre Baskerville, serif;
   color: #3d4a5b;
@@ -1468,8 +1467,8 @@ footer .secondpart .one .location {
   font-size: 15px;
   font-weight: 400;
 }
-footer .secondpart .one .email,
-footer .secondpart .one .phone {
+footer .secondpart .onep .email,
+footer .secondpart .onep .phone {
   margin-bottom: 0;
   font-family: Libre Baskerville, serif;
   color: #3d4a5b;
@@ -1477,8 +1476,8 @@ footer .secondpart .one .phone {
   font-size: 15px;
   font-weight: 400;
 }
-footer .secondpart .one .our,
-footer .secondpart .one .number {
+footer .secondpart .onep .our,
+footer .secondpart .onep .number {
   font-family: Libre Baskerville, serif;
   color: #3d4a5b;
   line-height: 1.9;
@@ -1572,4 +1571,20 @@ footer .thirdpart img {
      object-fit: contain;
   margin-right: 20px;
   margin-bottom: 10px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
 }/*# sourceMappingURL=main.css.map */

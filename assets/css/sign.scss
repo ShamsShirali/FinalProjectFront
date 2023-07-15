@@ -118,7 +118,7 @@
                 padding-top: 18px;
                 color: #000;
 
-                &:hover{
+                &:hover {
                     color: #bd9855;
                 }
             }
@@ -153,17 +153,22 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
-        .sign {
+        .signbt {
+            border: none;
+            cursor: pointer;
             width: 384px;
             height: 45px;
             background-color: #000;
-            color: #ffffff;
-            filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.2));
-            border: none;
-            cursor: pointer;
-            margin-top: 26px;
+            margin-top: 17px;
             margin-left: 30px;
-            font-family: Inter, sans-serif;
+            padding-top: 10px;
+            padding-left: 160px;
+
+            .sign {
+                color: #ffffff;
+                font-family: Inter, sans-serif;
+                text-decoration: none;
+            }
 
             &:hover {
                 background-color: #bd9855;
@@ -243,24 +248,32 @@
             padding-top: 10px;
         }
 
-        .regis {
+        .regis{
             width: 127px;
             height: 45px;
             background-color: #000;
-            color: #ffffff;
-            filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.2));
             border: none;
             cursor: pointer;
             margin-top: 20px;
+            padding-left: 28px;
+            padding-top: 8px;
+
+        a {
+            color: #ffffff;
             font-family: Inter, sans-serif;
             font-weight: 500;
             font-size: 14px;
-
+            text-decoration: none;
+        }
 
             &:hover {
                 opacity: 0.8;
                 background-color: #bd9855;
             }
-        }
     }
+    }
+}
+
+footer {
+    margin-top: 30px !important;
 }

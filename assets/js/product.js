@@ -1,12 +1,5 @@
 "use strict";
 
-$('.two .picture .otherpic img').click(function () {
-    let imgPath = $(this).attr('src');
-    $('.here img').attr('src',imgPath);
-    $('.here .photo2').style.opacity=0.3;
-    $(this).removeClass('d-none');
-});
-
 let datas = 1;
 document.querySelector('#counting').innerText = datas;
 
@@ -21,6 +14,45 @@ function decrement() {
   datas = datas + 1;
   document.querySelector('#counting').innerText = datas;
 }
+
+
+$('.two .picture .otherpic img').each(function(){
+  let imgPath = $(this).attr('src');
+  
+  $(this).click(function () {
+    if ($(this).attr("data-id") == 4) {
+      $(this).prev().css("opacity",0.3);
+      $(this).prev().prev().css("opacity",0.3);
+      $(this).prev().prev().prev().css("opacity",0.3);
+      $(this).css("opacity",1);
+      $('.here img').attr('src',imgPath);
+    }
+
+    if ($(this).attr("data-id") == 3) {
+      $(this).prev().css("opacity",0.3);
+      $(this).prev().prev().css("opacity",0.3);
+      $(this).next().css("opacity",0.3);
+      $(this).css("opacity",1);
+      $('.here img').attr('src',imgPath);
+    }
+
+    if ($(this).attr("data-id") == 2) {
+      $(this).prev().css("opacity",0.3);
+      $(this).next().css("opacity",0.3);
+      $(this).next().next().css("opacity",0.3);
+      $(this).css("opacity",1);
+      $('.here img').attr('src',imgPath);
+    }
+
+    if ($(this).attr("data-id") == 1) {
+      $(this).next().css("opacity",0.3);
+      $(this).next().next().css("opacity",0.3);
+      $(this).next().next().next().css("opacity",0.3);
+      $(this).css("opacity",1);
+      $('.here img').attr('src',imgPath);
+    }
+  })
+})
 
 $('.three .select ul li').each(function () {
     $(this).click(function () {
