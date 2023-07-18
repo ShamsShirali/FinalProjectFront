@@ -270,3 +270,67 @@ $(document).ready(function () {
       document.documentElement.scrollTop = 0;
   }
 })
+
+let datas = 1;
+document.querySelector('#countings').innerText = datas;
+
+function increment() {
+  if (datas > 1) {
+    datas = datas - 1;
+    document.querySelector('#countings').innerText = datas;
+  }
+}
+
+function decrement() {
+  datas = datas + 1;
+  document.querySelector('#countings').innerText = datas;
+}
+
+let datatwo = 1;
+document.querySelector('#countingtwo').innerText = datatwo;
+
+function increment() {
+  if (datatwo > 1) {
+    datatwo = datatwo - 1;
+    document.querySelector('#countingtwo').innerText = datatwo;
+  }
+}
+
+function decrement() {
+  datatwo = datatwo + 1;
+  document.querySelector('#countingtwo').innerText = datatwo;
+}
+
+// $(document).ready(function () {
+// $(".basket").mousemove(function(){
+//   $(".bskm").removeClass("d-none");
+// })
+// });
+
+let basket=document.querySelector('.basket');
+let bskm=document.querySelector('.bskm');
+
+basket.addEventListener('click',()=>{
+  if (bskm.classList.contains('active-basket')) {
+    bskm.classList.remove('active-basket');
+  }
+  else{
+    bskm.classList.add('active-basket');
+  }
+})
+
+//#region checkBoxChanged
+function checkboxChanged() {
+  let checkbox = document.querySelector('.form-check');
+  const checkOutBtn = document.querySelector('.checkbt');
+
+  if (checkbox.checked) {
+    checkOutBtn.classList.add('basketModal-activeBtn');
+    checkOutBtn.href = "./checkout.html";
+  } else {
+    checkOutBtn.classList.remove('basketModal-activeBtn');
+    checkOutBtn.href = '';
+  }
+}
+checkboxChanged();
+//#endregion

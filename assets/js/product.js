@@ -19,6 +19,7 @@ function decrement() {
 $('.two .picture .otherpic img').each(function(){
   let imgPath = $(this).attr('src');
   
+  
   $(this).click(function () {
     if ($(this).attr("data-id") == 4) {
       $(this).prev().css("opacity",0.3);

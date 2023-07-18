@@ -62,7 +62,9 @@ apart.forEach(index => {
         document.querySelector('.active').classList.add('d-none');
         document.querySelector('.active').classList.remove('active');
 
-        change.forEach(element => {
+        change.forEach((element) => {
+            element.classList.remove('active');
+            element.classList.add('d-none');
             if (element.getAttribute('data-id') == index.getAttribute('data-id')) {
                 element.classList.remove('d-none');
                 element.classList.add('active');

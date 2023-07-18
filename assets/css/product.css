@@ -267,6 +267,13 @@
   height: 48px;
   margin-top: 10px;
 }
+.two .adbtn .count h2 {
+  color: #000;
+  margin: 10px 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
 .two .adbtn .count button:nth-child(1) {
   width: 55px;
   height: 46px;
@@ -299,13 +306,6 @@
   background-color: black;
   color: white;
   border-radius: 7px;
-}
-.two .adbtn .count h2 {
-  color: #000;
-  margin: 10px 50px;
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: 500;
 }
 .two .adbtn #add {
   width: 400px;

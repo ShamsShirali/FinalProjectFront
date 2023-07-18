@@ -326,6 +326,14 @@
             width: 193px;
             height: 48px;
             margin-top: 10px;
+
+            h2 {
+                color: #000;
+                margin: 10px 50px;
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 500;
+            }
         }
 
         .count button:nth-child(1) {
@@ -363,14 +371,6 @@
             background-color: black;
             color: white;
             border-radius: 7px;
-        }
-
-        .count h2 {
-            color: #000;
-            margin: 10px 50px;
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: 500;
         }
 
         #add {

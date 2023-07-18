@@ -15,6 +15,7 @@
 
 .header {
   background-color: white;
+  z-index: 2;
 }
 .header .firsth {
   background-color: #0c1d32;
@@ -167,7 +168,7 @@
   cursor: pointer;
   padding-left: 30px;
   font-size: 18px;
-  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .header .secondh .searchic .find {
   font-family: Inter, sans-serif;
@@ -175,30 +176,15 @@
   font-size: 12px;
   padding-left: 18px;
   padding-bottom: 20px;
+  outline: none;
+  background: transparent;
+  border: none;
 }
 .header .secondh .searchic:hover i {
   color: #bd9855;
 }
 .header .secondh .searchic:hover .find {
   color: #bd9855;
-}
-.header .secondh .searchic .modl {
-  right: 520px;
-  bottom: 30px;
-}
-.header .secondh .searchic .modl .mdl {
-  height: 100px;
-  width: 1600px;
-  border-radius: 0;
-}
-.header .secondh .searchic .modl .mdl .inmodal #search {
-  margin-left: 20px;
-  margin-top: 30px;
-  border: none;
-  font-size: 23px;
-}
-.header .secondh .searchic .modl .mdl .inmodal .iks {
-  margin-left: 1200px;
 }
 .header .secondh .firstsel {
   display: flex;
@@ -1571,6 +1557,231 @@ footer .thirdpart img {
      object-fit: contain;
   margin-right: 20px;
   margin-bottom: 10px;
+}
+
+.modl {
+  right: 520px;
+  bottom: 30px;
+}
+.modl .mdl {
+  height: 100px;
+  width: 1600px;
+  border-radius: 0;
+}
+.modl .mdl .inmodal #search {
+  margin-left: 20px;
+  margin-top: 30px;
+  border: none;
+  font-size: 23px;
+}
+.modl .mdl .inmodal .iks {
+  margin-left: 1200px;
+}
+
+.bskm {
+  width: 400px;
+  height: 650px;
+  background-color: white;
+  z-index: 999;
+  top: 120px;
+  right: 30px;
+  position: absolute;
+  display: none;
+}
+.bskm.active-basket {
+  display: block;
+}
+.bskm .prd {
+  margin: 20px;
+  border-bottom: 1px solid #c4c3c3;
+  height: 270px;
+  overflow-y: auto;
+}
+.bskm .prd::-webkit-scrollbar {
+  width: 2px;
+}
+.bskm .prd::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+.bskm .prd::-webkit-scrollbar-track {
+  background-color: #e3dcdc;
+}
+.bskm .prd .prdone {
+  display: flex;
+  border-bottom: 1px solid #c4c3c3;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.bskm .prd .prdone img {
+  width: 100px;
+  height: 130px;
+}
+.bskm .prd .prdone .name {
+  margin-left: 20px;
+}
+.bskm .prd .prdone .name .nm {
+  font-size: 14px;
+  height: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.bskm .prd .prdone .name .nm:hover {
+  color: #bd9855;
+}
+.bskm .prd .prdone .name .counts {
+  display: flex;
+}
+.bskm .prd .prdone .name .counts .count {
+  display: flex;
+  border: 1px solid rgb(200, 199, 199);
+  width: 100px;
+  height: 20px;
+  margin-top: 10px;
+}
+.bskm .prd .prdone .name .counts .count h2 {
+  color: #000;
+  margin: 3px 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.bskm .prd .prdone .name .counts .count button:nth-child(1) {
+  width: 28px;
+  height: 18px;
+  font-size: 12px;
+  background-color: white;
+  border: none;
+  border-right: 1px solid rgb(200, 199, 199);
+  color: rgb(0, 0, 0);
+}
+.bskm .prd .prdone .name .counts .count button:nth-child(1):hover {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.bskm .prd .prdone .name .counts .count button:nth-child(3) {
+  width: 28px;
+  height: 18px;
+  font-size: 12px;
+  background-color: white;
+  border: none;
+  border-left: 1px solid rgb(200, 199, 199);
+  color: #000;
+  border-radius: 2px;
+  filter: brightness(1.1);
+  transition: all 0.5s;
+}
+.bskm .prd .prdone .name .counts .count button:nth-child(3):hover {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+}
+.bskm .prd .prdone .name .counts .per {
+  padding-left: 7px;
+  padding-top: 7px;
+  font-weight: 500;
+}
+.bskm .prd .prdone .name a {
+  color: #666;
+  font-size: 14px;
+}
+.bskm .prd .prdone .name a:hover {
+  color: red;
+  text-decoration: none;
+}
+.bskm .check {
+  margin: 0 20px;
+}
+.bskm .check .adgif {
+  display: flex;
+}
+.bskm .check .adgif .wrap {
+  color: #888888;
+  font-size: 13px;
+  padding-top: 3px;
+  height: 0;
+}
+.bskm .check .adgif .wrap span {
+  color: #bd9855;
+}
+.bskm .check .adgif .wrap:hover {
+  color: #bd9855;
+}
+.bskm .check .total {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c4c3c3;
+}
+.bskm .check .total .subt {
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 5px;
+}
+.bskm .check .total .totalpr {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 5px;
+}
+.bskm .check .radio {
+  margin-top: 20px;
+  display: flex;
+}
+.bskm .check .radio .agree {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bskm .check .radio .term {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 3px;
+}
+.bskm .check .radio .term:hover {
+  color: #bd9855;
+}
+.bskm .check .checkbt {
+  border: none;
+  cursor: pointer;
+  width: 360px;
+  height: 45px;
+  background-color: #000;
+  margin-top: 17px;
+  padding-top: 10px;
+  padding-left: 135px;
+}
+.bskm .check .checkbt .chc {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+}
+.bskm .check .checkbt:hover {
+  background-color: #bd9855;
+}
+.bskm .check .view {
+  width: 360px;
+  height: 44px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 26px;
+  padding-left: 135px;
+  padding-top: 8px;
+}
+.bskm .check .view a {
+  color: #000;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+}
+.bskm .check .view:hover {
+  border-color: #bd9855;
+  background-color: #bd9855;
+}
+.bskm .check .view:hover a {
+  color: white;
 }
 
 #myBtn {
