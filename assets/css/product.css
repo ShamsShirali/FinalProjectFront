@@ -107,12 +107,6 @@
   right: 30px;
   bottom: 750px;
 }
-.two .picture .here:hover .slc {
-  transform: scale(1.2);
-}
-.two .picture .here:hover .percent {
-  display: none;
-}
 .two .about {
   margin-left: 60px;
 }
@@ -858,6 +852,8 @@
   font-weight: 400;
   padding-left: 80px;
   height: 0;
+  text-decoration: none;
+  color: #000;
 }
 .four .cards .card .title:hover {
   color: #bd9855;
@@ -868,6 +864,8 @@
   font-weight: 400;
   padding-left: 100px;
   height: 0;
+  text-decoration: none;
+  color: #000;
 }
 .four .cards .card .title4:hover {
   color: #bd9855;
@@ -878,6 +876,8 @@
   font-weight: 400;
   padding-left: 62px;
   height: 0;
+  text-decoration: none;
+  color: #000;
 }
 .four .cards .card .title5:hover {
   color: #bd9855;
@@ -885,7 +885,6 @@
 .four .cards .card .price {
   color: #bd9855;
   padding-left: 130px;
-  padding-top: 10px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -900,12 +899,11 @@
   font-size: 15px;
   color: #796b6b;
   text-decoration: line-through;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 10px;
 }
 .four .cards .card .diswithpri .pricewith {
   color: #bd9855;
-  padding-top: 10px;
   font-size: 18px;
   font-weight: 500;
   padding-left: 5px;

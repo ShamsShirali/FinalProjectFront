@@ -114,7 +114,6 @@
                 }
 
                 .apart {
-                    padding-bottom: 10px;
                     display: block;
                     cursor: pointer;
                     color: #666;
@@ -138,6 +137,42 @@
 
                 .disab {
                     text-decoration: line-through;
+                }
+            }
+
+            .brands {
+                padding: 0;
+                border: none;
+                transition: all 0.5s;
+
+                .firstbrand {
+                    display: block;
+                    cursor: pointer;
+                    color: #bd9855;
+                    font-family: Inter, sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding-left: 0 !important;
+
+                    &:hover {
+                        color: #bd9855 !important;
+                    }
+                }
+
+                .brand {
+                    display: inline;
+                    cursor: pointer;
+                    color: #666;
+                    font-family: Inter, sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding-left: 10px;
+
+                    &:hover {
+                        color: #bd9855 !important;
+                    }
                 }
             }
 
@@ -179,7 +214,7 @@ margin-left: 10px;
                             border-radius: 5px;
                             border: none;
                             color: #bd9855;
-                            -moz-appearance: textfield;
+                            // -moz-appearance: textfield;
                         }
                     }
                 }
@@ -214,8 +249,8 @@ margin-left: 10px;
                         top: -5px;
                         background: none;
                         pointer-events: none;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
+                        // -webkit-appearance: none;
+                        // -moz-appearance: none;
                     }
                 }
 
@@ -534,6 +569,8 @@ margin-left: 10px;
                             font-weight: 400;
                             padding-left: 55px;
                             height: 0;
+                            text-decoration: none;
+                            color: #000;
 
                             &:hover {
                                 color: #bd9855;
@@ -546,6 +583,8 @@ margin-left: 10px;
                             font-weight: 400;
                             padding-left: 20px;
                             height: 0;
+                            text-decoration: none;
+                            color: #000;
 
                             &:hover {
                                 color: #bd9855;
@@ -558,6 +597,8 @@ margin-left: 10px;
                             font-weight: 400;
                             padding-left: 49px;
                             height: 0;
+                            text-decoration: none;
+                            color: #000;
 
                             &:hover {
                                 color: #bd9855;
@@ -570,6 +611,8 @@ margin-left: 10px;
                             font-weight: 400;
                             padding-left: 37px;
                             height: 0;
+                            text-decoration: none;
+                            color: #000;
 
                             &:hover {
                                 color: #bd9855;
@@ -579,7 +622,6 @@ margin-left: 10px;
                         .price {
                             color: #bd9855;
                             padding-left: 80px;
-                            padding-top: 10px;
                             font-size: 18px;
                             font-weight: 500;
                         }
@@ -595,12 +637,11 @@ margin-left: 10px;
                                 font-size: 15px;
                                 color: #796b6b;
                                 text-decoration: line-through;
-                                padding-bottom: 10px;
+                                padding-bottom: 20px;
                             }
 
                             .pricewith {
                                 color: #bd9855;
-                                padding-top: 10px;
                                 font-size: 18px;
                                 font-weight: 500;
                                 padding-left: 5px;
@@ -835,6 +876,8 @@ margin-left: 10px;
                             font-weight: 400;
                             padding-left: 50px;
                             height: 0;
+                            text-decoration: none;
+                            color: #000;
 
                             &:hover {
                                 color: #bd9855;
@@ -847,6 +890,8 @@ margin-left: 10px;
                             font-weight: 400;
                             padding-left: 17px;
                             height: 0;
+                            text-decoration: none;
+                            color: #000;
 
                             &:hover {
                                 color: #bd9855;
@@ -856,7 +901,6 @@ margin-left: 10px;
                         .price {
                             color: #bd9855;
                             padding-left: 80px;
-                            padding-top: 10px;
                             font-size: 18px;
                             font-weight: 500;
                         }
@@ -872,12 +916,11 @@ margin-left: 10px;
                                 font-size: 15px;
                                 color: #796b6b;
                                 text-decoration: line-through;
-                                padding-bottom: 10px;
+                                padding-bottom: 20px;
                             }
 
                             .pricewith {
                                 color: #bd9855;
-                                padding-top: 10px;
                                 font-size: 18px;
                                 font-weight: 500;
                                 padding-left: 5px;

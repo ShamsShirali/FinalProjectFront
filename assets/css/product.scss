@@ -129,15 +129,15 @@
                 bottom: 750px;
             }
 
-            &:hover {
-                .slc {
-                    transform: scale(1.2);
-                }
+            // &:hover {
+            //     .slc {
+            //         transform: scale(1.2);
+            //     }
 
-                .percent {
-                    display: none;
-                }
-            }
+            //     .percent {
+            //         display: none;
+            //     }
+            // }
         }
     }
 
@@ -1038,6 +1038,8 @@
                 font-weight: 400;
                 padding-left: 80px;
                 height: 0;
+                text-decoration: none;
+                color: #000;
 
                 &:hover {
                     color: #bd9855;
@@ -1050,6 +1052,8 @@
                 font-weight: 400;
                 padding-left: 100px;
                 height: 0;
+                text-decoration: none;
+                color: #000;
 
                 &:hover {
                     color: #bd9855;
@@ -1062,6 +1066,8 @@
                 font-weight: 400;
                 padding-left: 62px;
                 height: 0;
+                text-decoration: none;
+                color: #000;
 
                 &:hover {
                     color: #bd9855;
@@ -1071,7 +1077,6 @@
             .price {
                 color: #bd9855;
                 padding-left: 130px;
-                padding-top: 10px;
                 font-size: 18px;
                 font-weight: 500;
             }
@@ -1087,13 +1092,12 @@
                     font-size: 15px;
                     color: #796b6b;
                     text-decoration: line-through;
-                    padding-bottom: 10px;
+                    padding-bottom: 20px;
                     padding-left: 10px;
                 }
 
                 .pricewith {
                     color: #bd9855;
-                    padding-top: 10px;
                     font-size: 18px;
                     font-weight: 500;
                     padding-left: 5px;

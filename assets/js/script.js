@@ -30,13 +30,6 @@ $('.header .secondh .selec li').each(function () {
       $(this).next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
   }
-  if ($(this).attr("data-id") == 5) {
-      $(this).prev().css("color", "#0c1d32");
-      $(this).prev().prev().css("color", "#0c1d32");
-      $(this).prev().prev().prev().css("color", "#0c1d32");
-      $(this).prev().prev().prev().prev().css("color", "#0c1d32");
-      $(this).css("color", "#bd9855");
-  }
   })
 })
 
