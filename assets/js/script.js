@@ -1,35 +1,31 @@
 "use strict";
 
-$('.header .secondh .selec li').each(function () {
-  $(this).click(function () {
+$('.header .secondh .selec li a').each(function () {
+  $('.header .secondh .selec li').click(function () {
     if ($(this).attr("data-id") == 1) {
       $(this).next().css("color", "#0c1d32");
       $(this).next().next().css("color", "#0c1d32");
       $(this).next().next().next().css("color", "#0c1d32");
-      $(this).next().next().next().next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
     }
     if ($(this).attr("data-id") == 2) {
       $(this).prev().css("color", "#0c1d32");
       $(this).next().css("color", "#0c1d32");
       $(this).next().next().css("color", "#0c1d32");
-      $(this).next().next().next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
-  }
-  if ($(this).attr("data-id") == 3) {
+    }
+    if ($(this).attr("data-id") == 3) {
       $(this).prev().css("color", "#0c1d32");
       $(this).prev().prev().css("color", "#0c1d32");
       $(this).next().css("color", "#0c1d32");
-      $(this).next().next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
-  }
-  if ($(this).attr("data-id") == 4) {
+    }
+    if ($(this).attr("data-id") == 4) {
       $(this).prev().css("color", "#0c1d32");
       $(this).prev().prev().css("color", "#0c1d32");
       $(this).prev().prev().prev().css("color", "#0c1d32");
-      $(this).next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
-  }
+    }
   })
 })
 
@@ -250,17 +246,17 @@ $(document).ready(function () {
 
   window.onscroll = function () { scrollFunction() };
   function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-      } else {
-          mybutton.style.display = "none";
-      }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
 
-  mybutton.addEventListener("click",topFunction);
+  mybutton.addEventListener("click", topFunction);
   function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 })
 
@@ -300,14 +296,14 @@ function decrement() {
 // })
 // });
 
-let basket=document.querySelector('.basket');
-let bskm=document.querySelector('.bskm');
+let basket = document.querySelector('.basket');
+let bskm = document.querySelector('.bskm');
 
-basket.addEventListener('click',()=>{
+basket.addEventListener('click', () => {
   if (bskm.classList.contains('active-basket')) {
     bskm.classList.remove('active-basket');
   }
-  else{
+  else {
     bskm.classList.add('active-basket');
   }
 })
@@ -329,8 +325,14 @@ checkboxChanged();
 //#endregion
 
 // start modal
-let start=document.getElementById("general-start");
+  let start = document.getElementById("general-start");
 
-setTimeout(function(){
-  start.style.display="block";
-},2000);
+setTimeout(function () {
+  start.classList.remove("d-none");
+}, 2000);
+
+$(function () {
+  $("#general-start .start .over").click(function () {
+    $("#general-start").addClass("d-none");
+  })
+})

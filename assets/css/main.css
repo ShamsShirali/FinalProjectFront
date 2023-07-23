@@ -1435,6 +1435,7 @@ footer .firstpart .but input {
   background: rgba(233, 233, 233, 0.677);
   font-weight: 400;
   padding: 0 30px;
+  outline: none;
 }
 footer .firstpart .but button {
   width: 150px;
@@ -1577,6 +1578,8 @@ footer .thirdpart img {
   position: fixed;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
 }
 #general-start .start {
   background-color: white;
@@ -1585,6 +1588,7 @@ footer .thirdpart img {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
+  position: fixed;
   top: 200px;
   right: 500px;
 }
