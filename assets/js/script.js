@@ -327,3 +327,10 @@ function checkboxChanged() {
 }
 checkboxChanged();
 //#endregion
+
+// start modal
+let start=document.getElementById("general-start");
+
+setTimeout(function(){
+  start.style.display="block";
+},2000);
