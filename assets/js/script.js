@@ -2,25 +2,25 @@
 
 $('.header .secondh .selec li a').each(function () {
   $('.header .secondh .selec li').click(function () {
-    if ($(this).attr("data-id") == 1) {
+    if ($('.header .secondh .selec li a').attr("data-id") == 1) {
       $(this).next().css("color", "#0c1d32");
       $(this).next().next().css("color", "#0c1d32");
       $(this).next().next().next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
     }
-    if ($(this).attr("data-id") == 2) {
+    if ($('.header .secondh .selec li a').attr("data-id") == 2) {
       $(this).prev().css("color", "#0c1d32");
       $(this).next().css("color", "#0c1d32");
       $(this).next().next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
     }
-    if ($(this).attr("data-id") == 3) {
+    if ($('.header .secondh .selec li a').attr("data-id") == 3) {
       $(this).prev().css("color", "#0c1d32");
       $(this).prev().prev().css("color", "#0c1d32");
       $(this).next().css("color", "#0c1d32");
       $(this).css("color", "#bd9855");
     }
-    if ($(this).attr("data-id") == 4) {
+    if ($('.header .secondh .selec li a').attr("data-id") == 4) {
       $(this).prev().css("color", "#0c1d32");
       $(this).prev().prev().css("color", "#0c1d32");
       $(this).prev().prev().prev().css("color", "#0c1d32");
