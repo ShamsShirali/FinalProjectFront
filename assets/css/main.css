@@ -731,6 +731,24 @@
   color: white;
   background-color: #bd9855;
 }
+.three .generalcart .card .active {
+  color: red;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.three .generalcart .card .active:hover {
+  color: white;
+  background-color: #bd9855;
+}
 .three .generalcart .card .arrow {
   color: #000;
   background-color: white;
@@ -1729,13 +1747,14 @@ footer .thirdpart img {
   padding-top: 7px;
   font-weight: 500;
 }
-.bskm .prd .prdone .name a {
+.bskm .prd .prdone .name .remove {
   color: #666;
   font-size: 14px;
+  background-color: white;
+  border: none;
 }
-.bskm .prd .prdone .name a:hover {
+.bskm .prd .prdone .name .remove:hover {
   color: red;
-  text-decoration: none;
 }
 .bskm .check {
   margin: 0 20px;

@@ -800,6 +800,7 @@
                 }
 
                 .add {
+cursor: pointer;
 
                     p {
                         opacity: 0;
@@ -842,6 +843,26 @@
 
             .heart {
                 color: #000;
+                background-color: white;
+                transition: all 0.5s;
+                cursor: pointer;
+                position: absolute;
+                font-size: 20px;
+                top: 15px;
+                right: 25px;
+                width: 40px;
+                height: 40px;
+                padding-left: 10px;
+                padding-top: 10px;
+
+                &:hover {
+                    color: white;
+                    background-color: #bd9855;
+                }
+            }
+
+            .active{
+                color: red;
                 background-color: white;
                 transition: all 0.5s;
                 cursor: pointer;
@@ -2020,13 +2041,14 @@ position: fixed;
                     }
                 }
 
-                a {
+                .remove {
                     color: #666;
                     font-size: 14px;
+                    background-color: white;
+                    border: none;
 
                     &:hover {
                         color: red;
-                        text-decoration: none;
                     }
                 }
             }

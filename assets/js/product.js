@@ -1,20 +1,18 @@
-"use strict";
-
-let datas = 1;
-document.querySelector('#counting').innerText = datas;
+$(document).ready(function () {
+let datasp = 1;
+document.querySelector('#counting').innerText = datasp;
 
 function increment() {
-  if (datas > 1) {
-    datas = datas - 1;
-    document.querySelector('#counting').innerText = datas;
+  if (datasp > 1) {
+    datasp = datas - 1;
+    document.querySelector('#counting').innerText = datasp;
   }
 }
 
 function decrement() {
-  datas = datas + 1;
-  document.querySelector('#counting').innerText = datas;
+  datasp = datasp + 1;
+  document.querySelector('#counting').innerText = datasp;
 }
-
 
 $('.two .picture .otherpic img').each(function(){
   let imgPath = $(this).attr('src');
@@ -53,7 +51,6 @@ $('.two .picture .otherpic img').each(function(){
       $('.here img').attr('src',imgPath);
     }
   })
-})
 
 $('.three .select ul li').each(function () {
     $(this).click(function () {
@@ -147,7 +144,6 @@ apart.forEach(index => {
     })
 });
 
-$(document).ready(function () {
 let starList = document.querySelectorAll(".three .generalcart .card .firfloor .stars1 .st");
 
   starList.forEach(item => {
@@ -312,4 +308,5 @@ let starList = document.querySelectorAll(".three .generalcart .card .firfloor .s
 
 $('.three .subsection .sectwo button').click(function () {
   $('.three .subsection .sectwo .getin').toggleClass('d-none');
+})
 })
